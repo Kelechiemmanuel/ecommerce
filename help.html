@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="ASSET/IMAGES/WhatsApp_Image_2023-04-20_at_12.31.10-removebg-preview.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"> 
+    <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.0.3/dist/index.min.js"></script>
+    <title>Helpline</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800;900&display=swap');
+
+        *{
+            font-family: poppins;
+            scroll-behavior: smooth;
+        }
+        .search{
+                position: fixed;
+                background-color: lavender;
+                z-index: 60;
+                width: 100%;
+                height: 100px;
+                right: 0;
+                left: 0;
+                top: 0;
+            }
+            body{
+                margin: 0;
+
+            }
+            .img25{
+                width: 80px;
+            }
+            .logo-con{
+                margin-top: 10px;
+            }
+                .container{
+                display: inline-block;
+                position: relative;
+                background-color: whitesmoke;
+            }
+            .container:hover .content{
+                display: block;
+            }
+            .btn{
+                color: black;
+                background-color: transparent;
+                border: none;
+                height: 40px;
+            }
+            .content{
+                position: absolute;
+                width: 200px;
+                margin-left: -50px;
+                height: 110px;
+                margin-top: 1px;
+                border-radius: 5px 5px 5px 5px;
+                background-color: white;
+                display: none;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                overflow: auto;
+            }
+            .content a{
+                display: block;
+                text-align: center;
+                padding: 5px;
+                color: black;
+                text-decoration: none;
+            }
+            .content a:hover{
+            color: #ffff;
+            background-color: #00203fff;
+
+            }
+            .logo{
+                width: 40px;
+            }
+            .box{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: lavender;
+               padding-left: 40px;
+               padding-right: 40px;
+            }
+
+            .input{
+                width: 90%;
+                height: 35px;
+                border: 1px solid transparent;
+                padding-left: 13px;
+                border-radius: 5px 0 0  5px;  
+                outline: none;
+            }
+            .input2{
+                width: 90px;
+                text-align: center;
+                height: 40px;
+                color: white;
+                border: none;
+                font-size: 15px;
+                border-radius: 3px;
+                background-color: #00203fff;
+            }
+            .input2:hover{
+                opacity: 0.5;
+            }
+            .form{
+                display: flex;
+                border: 1px solid  #00203fff;
+                background-color: rgb(175, 196, 199);
+                padding-right: 10px;
+                justify-content: space-between;
+                width: 50%;
+                border-radius: 5px;
+            }
+            .gloo{
+                text-indent: -999px;
+                overflow: hidden;
+                color: #00203fff;
+                margin: 0;
+                border-radius: 5px;
+                background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+                border: 5px solid transparent;
+            }
+            .row{
+                display: inline-block;
+                position: relative;
+            }
+                    .col{
+                position: absolute;
+                width: 500px;
+                display: none;
+                left: -50px;
+                height: 50vh;
+                background-color: white;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                overflow: auto;
+            }
+            .row:hover .col{
+                display: block;
+            }
+            .col a{
+                display: block;
+                padding: 7px;
+                margin-left: 40px;
+                color: black;
+                text-decoration: none; 
+                transition: all 0.23s;
+            }
+            .col a:hover{
+            color: red;
+            transform: scaleY(2.1);
+            }
+            .space{
+                height: 20px;
+                width: 100%;
+                background-color: white;
+            }
+            .space2{
+                height: 30px;
+                width: 100%;
+                background-color: #00203fff;
+            }
+
+            h3{
+                text-align: center;
+                font-family: poppins;
+            }
+            i{
+                font-family: poppins;
+                font-size: 15px;
+            }
+            .btn2{
+                height: 40px;
+                width: 100px;
+                border-radius: 3px;
+                background-color: #00203fff;
+                border: none;
+            }
+            .btn2:hover{
+                opacity: 0.5;
+            }
+            .fix{
+                position: absolute;
+                color: white;
+                background-color: #00203fff;
+                padding-left: 4px;
+                padding-right: 4px;
+                padding-top: 4px;
+                padding-bottom: 4px;
+                border-radius: 2px;
+            }
+
+            .header-con{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                width: 100%;
+                height: 50px;
+                margin-top: 20px;
+               background-color: #00203fff;
+                margin-bottom: 10px;
+            }
+            .label-con{
+               display: flex;
+            }
+            .label{
+               margin-right: 8px;
+               font-family: poppins;
+               color: #ffff;
+            }
+            .all-linkerz{
+                display: flex;
+                justify-content: space-between;
+                margin-left: -150;
+            }
+            a{
+                font-family: poppins;
+            }
+            .btc{
+                background: none;
+                border: none;
+                font-family: poppins;
+                color: #ffff;
+                height: 50px;
+                width: 120px;
+            }
+            .btc:hover{
+                background: white;
+                color: gray;
+            }
+            .linker{
+                color: #ffff;
+                text-decoration: none;
+                height: 100px;
+                width: 120px;
+            }
+            .linker:hover{
+                color: gray;
+            }
+
+            @media screen and (max-width: 900px) {
+                .container{
+                    display: none;
+                }
+                .header-con{
+                    display: none;
+                }
+                .img25{
+                display: none;
+                }
+                .btn2{
+                    display: none;
+                }
+                .form{
+                    width: 80%;
+                    margin-right: 60px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+              
+
+            }
+            .logo2{
+                width: 80px;
+            }
+            .logo-menu{
+                margin-left: 10px;
+                margin-top: 25px;
+            }
+            .home-4{
+                color: #00203fff;
+            }
+            .chatz{
+                margin-right: 10px;
+            }
+            .label-con3{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                height: 50px;
+                /* background-color: whitesmoke; */
+                margin-bottom: 10px;
+            }
+            @media screen and (min-width: 900px) {
+                .label-con3{
+                    display: none;
+                }
+            }
+            .home{
+                margin-top: 150px;
+            }
+
+            .home{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                margin-top: 150px;
+            }
+
+            .center{
+                height: 60vh;
+                width: 100%;
+                margin: 0 5px 0 5px;
+                background-position: center;
+                background-size: cover;
+                border-radius: 15px 0 0 15px;
+            }
+
+            .right2{
+                height: 70vh;
+                width: 40%;
+               /* background-image: url(finger.jpg); */
+                background-position: left;
+                background-size: cover;
+                background-repeat: no-repeat;
+                border-radius: 0 15px 15px 0;
+            }
+            .meme{
+                width: 100%;
+                height: 34vh;
+                background-image: url(finger.jpg);
+                background-size: cover;
+                margin: 5px;
+            }
+            .meme2{
+                width: 100%;
+                height: 34vh;
+                background-image: url(store.jpg);
+                background-size: cover;
+                background-position: right;
+                margin: 5px;
+            }
+         .help{
+            width: 80%;
+            height: 90px;
+            background-color: #00203fff;
+            margin-left: auto;
+            padding-top: 30px;
+            margin-right: auto;
+            color: white;
+            text-align: center;
+       }
+       .help-con{
+        background-color: whitesmoke;
+        margin-top: 180px;
+        /* padding-top: 20px; */
+        /* height: 80vh; */
+        padding-bottom: 60px;
+       }
+         .help2{
+            width: 80%;
+            text-align: center;
+            height: 400px;
+            margin-top: 20px;
+            padding-top: 100px;
+            background-color: white;
+            margin-left: auto;
+            /* padding-top: 30px; */
+            margin-right: auto;
+            /* color: white; */
+       }
+       .auto{
+        font-weight: 900;
+       }
+       .click{
+             width: 300px;
+       }    .button{
+                    color: #04AA6D;
+                    bottom: 100px;
+                    font-size: 30px;
+                    right: 4px;
+                    transition: 0.5s;
+                    text-align: center;
+                    z-index: 100;
+                }
+                .button:hover{
+                    transform: scale(1.1);
+                }
+                .div{
+            /* width: 50%; */
+            margin-top: 50px;
+            margin-right: 50px;
+            margin-bottom: 50px;
+        }
+        .image{
+            margin-top: 30px;
+            width: 100%;
+        }
+        .now{
+            height: 50px;
+            width: 300px;
+            background-color: green;
+            cursor: pointer;
+            font-family: poppins;
+            font-weight: 700;
+            font-size: 20px;
+            border-radius: 5px;
+            margin-right: 30px;
+            border: none;
+            color: white;
+        }
+        hr{
+            margin-right: 100px;
+            font-size: 10px;
+        }
+        h1{
+            font-family: poppins;
+        
+        }
+        
+        .call{
+            width: 90%;
+        }
+        .tin{
+            font-size: 15px;
+        }
+        .tin2{
+            font-size: 14px;
+            font-family: poppins;
+            color: #00203fff;
+        }
+        label,p{
+            font-family: poppins;
+        }
+        .ar{
+            font-family: poppins;
+            font-size: 15px;
+            color: #00203fff;
+        }
+        .ict{
+            font-size: 32px;
+            height: 50px;
+            font-family: poppins;
+            border: none;
+            border-radius: 30px;
+            width: 50px;
+            color: white;
+            background-color: gray;
+        }
+        .ict:hover{
+            background-color: orange;
+            transition: all 0.5s;
+        }
+        .zara{
+            width: 50px;
+        }
+        .distri{
+            background-color: whitesmoke;
+            width: 100%;
+            height: 100%;
+            padding-top: 40px;
+            margin-top: 150px;
+            padding-bottom: 40px;
+            justify-content: center;
+        }
+        @media screen and (max-width: 900px) {
+            .cola{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .div{
+                margin-left: 70px;
+                margin-right: 70px;
+            }
+            .ict{
+                margin-top: 20px;
+            }
+            
+        }
+        .lave{
+            background: none;
+            border: none;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .ink{
+            font-family: poppins;
+            font-size: 20px;
+            margin: 20px;
+            text-decoration: none;
+            color: black;
+        }
+        .sold-all{
+            width: 80%;
+            margin: auto;
+            margin-top: 50px;
+            height: 100px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            background-color: white;
+        }
+        .rank{
+            font-weight: 700;
+            font-size: 30px;
+            color: #00203fff;
+        }
+
+        .asap{
+            width: 100px;
+            margin-top: 40px;
+            }
+            .asap2{
+                width: 50px;
+            }
+            h2{
+                font-size: poppins;
+            }
+            .career{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: center;
+                background-color: rgb(51, 47, 47);
+                width: 100%;
+                height: 100%;
+                padding-bottom: 30px;
+            }
+            .apple{
+                width: 40px;
+                color: #fff;
+            }
+            .apple2{
+                width: 23px;
+            }
+            .log{
+
+                width: 250px;
+                height: 40px;
+                padding-left: 20px;
+                margin-top: -15px;
+                outline: #5cc8d7ff;
+                border-radius: 3px;
+                border: none;
+            }
+            .news{
+                margin-top: -20px;
+                color: #fff;
+                font-family: poppins;
+            }
+            .btnc{
+                text-align: center;
+            }
+            .btn3{
+                width: 100px;
+                height: 45px;
+                border: 2px solid #00203fff;
+                border-radius: 3px;
+                color: #fff;
+                background: none;
+            }
+            .btn3:hover{
+                color: #5cc8d7ff;
+                border: 2px solid #5cc8d7ff;
+            }
+            @media screen and (max-width: 500px) {
+                .zaa{
+                    margin-top: 30px;
+                }
+                .zaa2{
+                    margin-left: 30px;
+                }
+                .log{
+                    width: 80%;
+                    margin-bottom: 10px;
+                }
+                .tin,
+                .ict{
+                    margin-top: -10px;
+                    margin-bottom: 10px;
+                }
+            }
+
+            .footer{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+            }
+            .footer-carrier{
+                width: 100%;
+                height: 100%;
+                background-color: rgba(37, 35, 35, 0.856);
+                
+            }
+            .pin{
+                margin-left: -40px;
+            }
+            li{
+                list-style: none;
+            }
+            .hyper{
+                color: lightgray;
+                font-size: poppins;
+                text-decoration: none;
+                font-size: 13px;
+            }
+            .hyper:hover{
+                color: #fff;
+                text-decoration: underline;
+            }
+            .about{
+                margin-left: 40px;
+            }
+            .br{
+               background: none;
+               border: none;
+            }
+            .more-info{
+                margin-right: 40px;
+            }
+            @media screen and (max-width: 500px) {
+                .payment{
+                    margin-right: 60px;
+                }
+                .buying{
+                    margin-left: 40px;
+                }
+                .right{
+                    margin-bottom: 70px;
+                }
+                
+            }
+            .loo{
+                color: #5cc8d7ff;
+                font-family: poppins;
+                font-size: 17px;
+            }
+            .h2{
+                color: lightgray;
+            }
+
+            .connect{
+                text-align: center;
+                padding-bottom: 40px;
+            }
+            .ul-con{
+                display: flex;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .linking{
+                margin: 10px;
+                height: 50px;
+            }
+            .right{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #0c0c0c;
+                width: 100%;
+            }
+            .line-up{
+                width: 35%;
+                height: 2px;
+                background-color: lightgray;
+            }
+            .copy5{
+                color: #fff;
+            }
+
+            .header-con4{
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 100%;
+                height: 50px;
+                position: fixed;
+                z-index: 100;
+                margin-top: 20px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin-top: 20px;
+               background-color: #00203fff;
+            }
+            @media screen and (min-width: 900px) {
+                .header-con4{
+                    display: none;
+                }
+            }
+            @media screen and (max-width: 500px) {
+                .footer-carrier{
+                    display: none;
+                }
+                /* .col a:hover{
+                    background-color: black;
+                } */
+                .col{
+                    position: absolute;
+                    bottom: 100%;
+                }
+                .logo{
+                    position: relative;
+                }
+                
+            }
+
+            .header-con4{
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 100%;
+                height: 50px;
+                position: fixed;
+                z-index: 100;
+                margin-top: 20px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin-top: 20px;
+               background-color: #0c0c0c;
+            }
+            @media screen and (min-width: 900px) {
+                .header-con4{
+                    display: none;
+                }
+            }
+            @media screen and (max-width: 500px) {
+                .footer-carrier{
+                    display: none;
+                }
+                .col a:hover{
+                    color: red;
+                }
+                .col{
+                    position: absolute;
+                    bottom: 100%;
+                }
+                .logo{
+                    position: relative;
+                }
+            }
+            .connect{
+                color: #00203fff;
+                text-decoration: none;
+            }
+
+            .button-6{
+               color: #fff;
+            }
+    .whatsapp-link{
+        width: 60px;
+        height: 60px;
+        background-color: rgb(46, 182, 46);
+        border: none;
+        border-radius: 50%;
+        position: fixed;
+        z-index: 100;
+        font-size: 40px;
+        height: 60px;
+        width: 60px;
+        right: 10px;
+        transition: 0.5s;
+        bottom: 150px;
+    }
+    
+    .whatsapp-link:hover{
+        transform: scale(1.1);
+    }
+
+            .repeat{
+        border: none;
+        position: fixed;
+        right: 20px;
+        z-index: 100;
+        bottom: 40px;
+        background: none;
+        animation: bounce 0.5s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+
+    }
+    @keyframes bounce {
+            from {
+                transform: translate3d(0, 0, 0);
+            }
+            to {
+                transform: translate3d(0, 05px, 0);
+            }
+        }
+        .chaty{
+            width: 30px;
+        }
+        .live{
+            margin-top: 30px;
+        }
+
+
+
+        .section-msg{
+            max-width: 1100px;
+            margin: auto;
+            text-align: center;
+            padding: 0 1rem;
+        }
+        .msg-title{
+            font-size: 3rem;
+        }
+        .msg-desciption{
+            font-size: 2rem;
+        }
+        button{
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+        .chat-btn{
+            /* position: fixed; */
+            right: 50px;
+            bottom: 30%;
+            background: #00203fff;
+            color: white;
+            width: 200px;
+            height: 60px;
+            border-radius: 5px;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+        }
+        .chat-btn:hover, .submit:hover, #emoji-btn:hover{
+            opacity: 1;
+        }
+        .chat-popup{
+            position: fixed;
+            display: none;
+            top: 160px;
+            bottom: 60px;
+            right: 120px;
+            height: 400px;
+            width: 300px;
+            background: rgb(94, 87, 87);
+            /* display: flex; */
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 0.7rem;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+        }
+        .show{
+            display: flex;
+        }
+        .chat-area{
+            height: 80%;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+        .income-msg{
+            display: flex;
+            align-items: center;
+        }
+        .avatar{
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .income-msg .msg{
+            background: #00203fff;
+            color: white;
+            padding: 0.5rem;
+            border-radius: 25px;
+            margin-left: 1rem;
+            box-shadow: 0.2px 5px rgba(0, 0, 0, 0.4);
+        }
+        .badge{
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: -10px;
+            right: -10px;
+        }
+        .input-area{
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+        .input20{
+            width: 100%;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+            border-radius: 5px;
+            height: 2.2rem;
+        }
+        #emoji-btn{
+            position: absolute;
+            font-size: 1.2rem;
+            background: transparent;
+            right: 50px;
+            top: 2px;
+            opacity: 0.5;
+        }
+        .submit{
+            padding: 0.25rem 0.5rem;
+            margin-left: 0.5rem;
+            background-color: green;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            opacity: 0.7;
+        }
+        .out-msg{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .my-msg{
+            display: flex;
+            justify-content: flex-end;
+            margin: 0.75rem;
+            padding: 0.5rem;
+            background-color: #ddd;
+            border-radius: 25px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+            word-break: break-all;
+        }
+        @media screen and (max-width: 500px) {
+            .chat-popup{
+                bottom: 120px;
+                right: 10%;
+                width: 85vw;
+            }
+            
+        }
+
+    
+    </style>
+   
+</head>
+<body>
+    <section class="search">
+        <div class="label-con3">
+            <div class="logo-menu">
+                <img class="logo2" src="ASSET/IMAGES/WhatsApp_Image_2023-05-04_at_06.34.18-removebg-preview.png" alt="">
+            </div>
+            <div class="chatz">
+                <!-- <a class="home-4" href="#">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                </a> -->
+                <a class="home-4" href="cart.html">
+                    <i class="fas fa-shopping-cart">cart</i>
+                </a>
+            </div>
+            </div>
+            <div class="box">
+                <div class="logo-con">
+                    <img class="img25" src="ASSET/IMAGES/WhatsApp_Image_2023-05-04_at_06.34.18-removebg-preview.png" alt="">
+                </div>
+                <form class="form">
+                    <input class="input" type="text" placeholder="Search Product,Brand and Categories">
+                    <button class="gloo" type="search">Submit</button>
+                </form>
+                <!-- <button class="input2">Search</button> -->
+                <div class="container">
+                    <button class="btn2">
+                        <i style="color: #ffff;" class='fas fa-user-alt'></i>
+                        <label style="color: #fff;" for="">Account</label>
+                    </button>
+                    <div class="content">
+                        <a href="account.html">Login/<br>
+                            Sign up</a> 
+                    </div>
+                </div> 
+                <div class="container">
+                    <button class="btn2">
+                        <i style="color: #fff;" class="fa fa-question-circle btm"></i>
+                        <label style="color: #fff;" for="">Help</label>
+                    </button>
+                    <div class="content">
+                        <a href="./help.html">Contact Us</a>
+                        <a href="./about.html">About Us</a>
+                        <a href="./question.html">FAQs</a>              
+                    </div>
+                </div> 
+                <button class="btn2">
+                    <i style="color: white;" class="fas fa-shopping-cart"></i>
+                        <label style="color: #fff;" for="">Cart</label>
+                </button>
+            </div>
+        <header class="header-con">
+            <div class="row">
+                <div class="label-con">
+                    <label class="label">All Categories</label>
+                <!-- <img class="logo" src="ham123-removebg-preview.png" alt=""> -->
+                <i style="color: #fff; margin-top: 5px;" class="fa fa-bars"></i>
+                </div>
+                <div class="col">
+                    <a href="./index.html">Home</a> 
+                    <a href="./computer.html">Computing</a>
+                    <a href="./ph.html">Smartphones</a>
+                    <a href="apple.html">Apple Phones</a>
+                    <a href="./apple.html">Top Official</a>
+                    <a href="./index.html">Best Selling</a>
+                    <a href="./index.html">Other Categories</a>
+                </div>
+            </div>
+
+                     
+            <div>
+                <a class="linker" href="./index.html">
+                    <button class="btc">Home</button>
+                </a>
+            </div>
+            <div>
+                <a class="linker" href="./apple.html">
+                    <button class="btc">Top Official</button>
+                </a>
+            </div>
+            <div>
+                <a class="linker" href="./apple.html">
+                    <button class="btc">Best selling</button>
+                </a>
+            </div>
+            <div>
+                <a class="linker" href="./ph.html">
+                    <button class="btc">smartphones</button>
+                </a>
+            </div>
+    
+            <div>
+                <a class="linker" href="./index.html">
+                    <button class="btc">Other Categories</button>
+                </a>
+            </div>
+          
+        
+        </header>
+    </section>
+    <section class="help-con">
+        <div class="help">
+            <h1 class="auto">NEED HELP?</h1>
+        </div>
+        <div class="help2">
+            <h1>CONTACT:</h1>
+            <h1 class="auto">07059051442</h1>
+
+            <p>
+                We are available Monday to Sunday
+            </p>
+            <p>
+                from 8am to 8pm
+            </p>
+            <h1>LOCATION:</h1>
+            <p>
+              RD 3 Ikota Shopping Complex 
+              Eleganza Shoppping Mall
+             </p>
+            <img class="click" src="contact_us.png" alt="">
+       
+            <section class="section-msg">
+                <!-- <h1 class="msg-title">livechat</h1>
+                <p class="msg-desciption">click on the chat button to start chatting</p> -->
+                <button class="chat-btn">
+                    <i class="material-icons">comment</i>
+                    <label for="">Live Chat</label>
+                </button>
+                <div class="chat-popup">
+                 
+                    <div class="chat-area">
+                        <div class="income-msg">
+                            <img class="avatar" src="ASSET/IMAGES/change2.jpg" alt="">
+                            <span class="msg">Hi, How can we help you</span>
+                        </div>
+                    </div>
+                    <div class="input-area">
+                        <input class="input20" type="text">
+                        <button id="emoji-btn">&#127773;</button>
+                        <button class="submit">
+                            <i class="material-icons"> send</i>
+                        </button>
+                    </div>
+                </div>
+        
+            </section>
+    </div>
+    </section>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d507516.07087303145!2d3.487077565884346!3d6.397957254704019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x103bf73e91b0ccf5%3A0x66dd0231fb1eb4f3!2sIkota%20Shopping%20Complex%2C%20Aja%20106104%2C%20Lekki%2C%20Lagos!3m2!1d6.462727!2d3.55679!5e0!3m2!1sen!2sng!4v1683645441518!5m2!1sen!2sng" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <div class="career">
+        <div class="zaa">
+            <img class="asap"  src="ASSET/IMAGES/WhatsApp_Image_2023-05-04_at_06.08.37-removebg-preview.png" alt="">
+        </div>
+        <div class="zaa2">
+            <h2 style="color: #fff;">NEW TO AUSMOBILE?</h2>
+            <p class="news">
+                Subscribe to our newsletter to get updates on our latest offers!
+            </p>
+            <div>
+                <input class="log" type="text" placeholder="Enter Your Email">
+                <button class="btn3">Male</button>
+                <button class="btn3">Female</button>
+            </div>
+        </div>
+        <div class="download">
+            <label style="color: #fff;" for="">DOWNLOAD AUSMOBILE FREE APP</label><br>
+            <label style="color: #fff;" for="">Get access to exclusive offers!</label><br>
+            <button class="btcn">
+                <img class="apple" src="ASSET/IMAGES/Apple-Logo.png" alt="">
+                <a class="connect" href="https://www.apple.com"> Download on the<br>Apple Store
+                </a>
+            </button>
+            <button class="btcn">
+                <img class="apple2" src="ASSET/IMAGES/play.png" alt="">
+                <a class="connect" href="https://www.playstore.com">Download on the<br>playstore</a>
+                <!-- <span style="margin-left: 20px;"></span> -->
+            </button>
+        </div>
+    </div>
+    <div class="footer-carrier">
+        <div class="footer">
+            <div class="about">
+                <h2 class="h2">ABOUT AUSMOBILE</h2>
+                <ul class="pin">
+                    <li>
+                        <a class="hyper" href="about.html">About US</a>
+                    </li>
+                    <li>
+                        <a  class="hyper" href="help.html">Contact Us</a>
+                    </li>
+                    <li>
+                        <a class="hyper" href="term.html">Terms & Conditions</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="payment">
+                <h2 class="h2">QUICKLINKS</h2>
+                <ul class="pin">
+                    <li>
+                        <a class="hyper" href="./apple.html">Top Official</a>
+                    </li>
+                    <li>
+                        <a class="hyper" href="./ph.html">Smartphones</a>
+                    </li>
+                    <li>
+                        <a class="hyper" href="./index.html">Others</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="buying">
+                <h2 class="h2">BUYING ON AUSMOBILE</h2>
+                <ul class="pin">
+                    <li>
+                        <a class="hyper" href="#">Buyer Safty Center</a>
+                    </li>
+                    <li>
+                        <a class="hyper" href="question.html">FAQs</a>
+                    </li>
+                    <li>
+                        <a class="hyper" class="hyper" href="delivery.html">Delivery</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="more-info">
+                <h2 class="h2">MORE INFO</h2>
+                <ul class="pin">
+                    <li>
+                        <a class="hyper" href="track.html">Track Order</a>
+                    </li>
+                    <li>
+                        <a class="hyper" href="order.html">Order</a>
+                    </li>
+                    <li>
+                        <a class="hyper" href="./privacy.html">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="connect">
+            <h2 class="h2">CONNECT WITH US</h2>
+                    <a class="linking" href="https://www.facebook.com">
+                        <i style="color: #fff; font-size: 20px;" class='fab fa-facebook-f'></i>
+                    </a>
+                    <a class="linking" href="https://www.google.com/gmail">
+                        <i style="color: #fff; font-size: 20px;" class="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
+                    <a class="linking"  href="https://www.instagram.com">
+                        <i style="color: #fff; font-size: 20px;" class='fa fa-instagram'></i>
+                    </a>
+        </div>
+    </div>
+    <div class="right">
+        <div class="line-up"></div>
+        <div>
+            <p class="copy5">&#169; 2023 Ausmobilestore.All rights reserved</p>
+        </div>
+        <div class="line-up"></div>
+    </div>
+    </div>
+    
+       <header class="header-con4">
+                <div class="row">
+                    <div class="label-con">
+                        <label class="label"></label>
+                    <i style="color: #fff; margin-top: 5px;" class="fa fa-bars"></i>
+                    </div>
+                    <div class="col">
+                        <a href="./index.html">Home</a> 
+                        <a href="./computer.html">Computing</a>
+                        <a href="./ph.html">Smartphones</a>
+                        <a href="apple.html">Apple Phones</a>
+                        <a href="./apple.html">Top Official</a>
+                        <a href="./index.html">Best Selling</a>
+                        <a href="./index.html">Other Categories</a>
+                    </div>
+                </div>
+                <div>
+                    <a class="linker" href="help.html">Contact US</a>
+                </div>
+                <div>
+                    <a class="linker" href="#">Payment</a>
+                </div>
+                <div>
+                    <a class="linker" href="cart.html">
+                        <i class="fas fa-shopping-cart">cart</i>
+                    </a>
+                </div>
+                <div>
+                    <a class="linker" href="index.html">
+                            <a href="index.html">
+                                <i style="font-size: 30px; margin-right: 30px; color: #fff;" class="fa fa-home" aria-hidden="true"></i>
+                            </a>
+                    </a>
+                </div>
+           
+            </header>
+
+
+
+        
+
+            <button class="whatsapp-link"> 
+                <a href="https://api.whatsapp.com/send?phone=
+                +2347059051442&text=Hello We are here to help u!!">
+                <i class="fa fa-whatsapp button-6"></i>
+                </a>
+                </button>
+
+              
+                <button class="repeat" id="repeat">
+                    <a href="#">
+                        <i class='fas fa-angle-double-up' style='font-size:38px;color:rgba(26, 115, 150, 0.89)'></i>
+                    </a>
+                </button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <script>
+
+                        let mybutton = document.getElementById("repeat");
+
+                        // When the user scrolls down 20px from the top of the document, show the button
+                        window.onscroll = function() {scrollFunction()};
+
+                        function scrollFunction() {
+                        if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+                            mybutton.style.display = "block";
+                        } else {
+                            mybutton.style.display = "none";
+                        }
+                        }
+
+
+
+
+                        const popup = document.querySelector('.chat-popup');
+                        const chatBtn = document.querySelector('.chat-btn');
+                        const submitBtn = document.querySelector('.submit');
+                        const chatArea = document.querySelector('.chat-area');
+                        const inputElm = document.querySelector('input');
+                        const emojibtn = document.querySelector('#emoji-btn');
+                        const picker = new EmojiButton();
+
+                        emojibtn.addEventListener('click', () => {
+                        picker.togglePicker(emojibtn);
+                        
+                        });
+
+                        picker.on('emoji', emoji => {
+                            document.querySelector('input').value += emoji;
+                        });
+
+                        chatBtn.addEventListener('click', ()=>{
+                            popup.classList.toggle('show');
+                        })
+                        submitBtn.addEventListener('click', ()=>{
+                            let userInput = inputElm.value;
+                            let temp = `<div class="out-msg">
+                            <span class="my-msg">${userInput}</span>
+                            <img src="ASSET/IMAGES/download.jpg" class="avatar">
+                            </div>`;
+                            chatArea.insertAdjacentHTML("beforeend", temp);
+                            inputElm.value = '';
+                        })
+
+
+                </script>
+    
+</body>
+</html>

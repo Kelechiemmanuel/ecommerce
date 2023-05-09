@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="ASSET/IMAGES/WhatsApp_Image_2023-04-20_at_12.31.10-removebg-preview.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <style>
+           @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800;900&display=swap');
+        body{
+            background-color: rgb(219, 215, 215);
+            margin: 0;
+        }
+        *{
+            font-family: poppins;
+            scroll-behavior: smooth;
+        }
+
+        .search{
+                position: fixed;
+                background-color: lavender;
+                z-index: 60;
+                width: 100%;
+                height: 100px;
+                right: 0;
+                left: 0;
+                top: 0;
+            }
+        .img25{
+                width: 70px;
+            }
+            .logo-con{
+                margin-top: 10px;
+            }
+                .container{
+                display: inline-block;
+                position: relative;
+                background-color: whitesmoke;
+            }
+            .container:hover .content{
+                display: block;
+            }
+            .btn{
+                color: black;
+                background-color: transparent;
+                border: none;
+                height: 40px;
+            }
+            .content{
+                position: absolute;
+                width: 200px;
+                margin-left: -50px;
+                height: 110px;
+                margin-top: 1px;
+                border-radius: 5px 5px 5px 5px;
+                background-color: white;
+                display: none;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                overflow: auto;
+            }
+            .content a{
+                display: block;
+                text-align: center;
+                padding: 5px;
+                color: black;
+                text-decoration: none;
+            }
+            .content a:hover{
+            color: #ffff;
+            background-color: #00203fff;
+
+            }
+            .logo{
+                width: 40px;
+            }
+            .box{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: lavender;
+               padding-left: 40px;
+               padding-right: 40px;
+            }
+
+            .input{
+                width: 90%;
+                height: 35px;
+                border: 1px solid transparent;
+                padding-left: 13px;
+                border-radius: 5px 0 0  5px;  
+                outline: none;
+            }
+            .input2{
+                width: 90px;
+                text-align: center;
+                height: 40px;
+                color: white;
+                border: none;
+                font-size: 15px;
+                border-radius: 3px;
+                background-color: #00203fff;
+            }
+            .input2:hover{
+                opacity: 0.5;
+            }
+            .form{
+                display: flex;
+                border: 1px solid  #00203fff;
+                background-color: rgb(175, 196, 199);
+                padding-right: 10px;
+                justify-content: space-between;
+                width: 50%;
+                border-radius: 5px;
+            }
+            .gloo{
+                text-indent: -999px;
+                overflow: hidden;
+                color: #00203fff;
+                margin: 0;
+                border-radius: 5px;
+                background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+                border: 5px solid transparent;
+            }
+            .row{
+                display: inline-block;
+                position: relative;
+            }
+            .col{
+                position: absolute;
+                width: 500px;
+                display: none;
+                left: -50px;
+                height: 50vh;
+                background-color: white;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                overflow: auto;
+            }
+            .row:hover .col{
+                display: block;
+            }
+            .col a{
+                display: block;
+                padding: 7px;
+                margin-left: 40px;
+                color: black;
+                text-decoration: none; 
+                transition: all 0.23s;
+            }
+            .col a:hover{
+            color: red;
+            transform: scaleY(2.1);
+            }
+            .space{
+                height: 20px;
+                width: 100%;
+                background-color: white;
+            }
+            .space2{
+                height: 30px;
+                width: 100%;
+                background-color: #00203fff;
+            }
+
+            h3{
+                text-align: center;
+                font-family: poppins;
+            }
+            i{
+                font-family: poppins;
+                font-size: 15px;
+            }
+            .btn2{
+                height: 40px;
+                width: 100px;
+                border-radius: 3px;
+                background-color: #00203fff;
+                border: none;
+            }
+            .btn2:hover{
+                opacity: 0.5;
+            }
+
+            .header-con{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                width: 100%;
+                height: 50px;
+                margin-top: 20px;
+               background-color: #00203fff;
+                margin-bottom: 10px;
+            }
+            .label-con{
+               display: flex;
+            }
+            .label{
+               margin-right: 8px;
+               font-family: poppins;
+               color: #ffff;
+            }
+            .all-linkerz{
+                display: flex;
+                justify-content: space-between;
+                margin-left: -150;
+            }
+            a{
+                font-family: poppins;
+            }
+            .btc{
+                background: none;
+                border: none;
+                font-family: poppins;
+                color: #ffff;
+                height: 50px;
+                width: 120px;
+            }
+            .btc:hover{
+                background: white;
+                color: gray;
+            }
+            .linker{
+                color: #ffff;
+                text-decoration: none;
+                height: 100px;
+                width: 120px;
+            }
+            .linker:hover{
+                color: gray;
+            }
+
+            @media screen and (max-width: 900px) {
+                .container{
+                    display: none;
+                }
+                .header-con{
+                    display: none;
+                }
+                .img25{
+                display: none;
+                }
+                .btn2{
+                    display: none;
+                }
+                .form{
+                    width: 80%;
+                    margin-right: 60px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+              
+
+            }
+            .logo2{
+                width: 70px;
+            }
+            .logo-menu{
+                margin-left: 10px;
+                margin-top: 25px;
+            }
+            .home-4{
+                color: #00203fff;
+            }
+            .chatz{
+                margin-right: 10px;
+            }
+            .label-con3{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                height: 50px;
+                /* background-color: whitesmoke; */
+                margin-bottom: 10px;
+            }
+            @media screen and (min-width: 900px) {
+                .label-con3{
+                    display: none;
+                }
+            }
+            .home{
+                margin-top: 150px;
+            }
+
+            .home{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                margin-top: 150px;
+            }
+      
+        .section-con{
+            width: 100%;
+            background-color: whitesmoke;
+            padding-top: 10px;
+            margin-top: 150px;
+        }
+        .cart{
+            display: block;
+            width: 80%;
+            border: 2px solid white;
+            background-color: white;
+            border-radius: 6px;
+            height: 50vh;
+            margin: 30vh auto;
+        }
+        .carty{
+            margin-left: 18px;
+            margin-top: 30px;
+            color: #00203fff;
+            
+        }
+        h3,
+        .p2{
+            font-family: poppins;
+            text-align: center;
+        }
+        a{
+            font-family: poppins;
+        }
+        .btn{
+            margin-left: 44%;
+            height: 40px;
+            border: none;
+            color: white;
+            border-radius: 3px;
+            background-color: #00203fff;
+        }
+        .lin{
+            color: white;
+            font-family: poppins;
+        }
+        .cart2{
+            height: 80px;
+            width: 80px;
+            border-radius: 10px;
+            margin-left: 45%;
+            margin-top: 40px;
+            border-radius: 40px;
+            background-color: rgb(226, 224, 224);
+        }
+
+        .row-col{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                height: 370px;
+                margin-bottom: 30px;
+                background-color: white;
+            }
+            .col5{
+                position: relative;
+                margin: 8px;
+                height: 50vh;
+                text-align: center;
+                margin-top: 25px;
+                transition: all 0.23s;
+            }
+            .col5:hover{
+                box-shadow: 0 0 5px 0 black;
+                transform: scale(1.1);
+            }
+            .ident{
+                width: 170px;
+            }
+            .p{
+                margin-left: 10px;
+                margin-right: 5px;
+            }
+            p,
+            del{
+                text-align: center;
+                font-family: poppins;
+                font-size: 15px;
+            }
+            .anchor{
+                text-align: center;
+                font-family: poppins;
+                color: #00203fff;
+                text-decoration: none;
+            }
+            .btn-container{
+                width: 130px;
+                border: 1px solid #5cc8d7ff;
+                border-radius: 20px;
+                background: none;
+                height: 30px;
+            }
+            .btn-container:hover{
+                background: #5cc8d7ff;
+                transition: all 0.5s;
+            }
+
+            .fix{
+                position: absolute;
+                color: white;
+                /* background-color: #00203fff; */
+                padding-left: 4px;
+                padding-right: 4px;
+                padding-top: 4px;
+                padding-bottom: 4px;
+                border-radius: 20px;
+                 }
+
+                 @media screen and (max-width: 500px) {
+                    .row-col{
+                        display: flex;
+                        flex-wrap: wrap;
+                        height: 100%;
+                    }
+                    .col5{
+                        height: 50vh;
+                    }
+                 }
+                 .data{
+                    font-family: poppins;
+                    font-weight: 900;
+                    font-size: 30px;
+                    margin-left: 130px;
+                }
+                .button{
+                    color: #04AA6D;
+                    position: fixed;
+                    bottom: 100px;
+                    font-size: 50px;
+                    right: 4px;
+                    transition: 0.5s;
+                    text-align: center;
+                    z-index: 100;
+                }
+                .button:hover{
+                    transform: scale(1.1);
+                }
+                .payment-con{
+                    margin-bottom: 10px;
+                }
+                .class-img{
+                    width: 100px;
+                    margin: 5px;
+                }
+                .class-img2{
+                    width: 60px;
+                    margin: 5px;
+                }
+                .asappay{
+                    font-size: 40px;
+                    color: #5cc8d7ff;
+                    text-decoration: none;
+                }
+                .scale{
+                    color: #00203fff;
+                }
+
+                
+        .asap{
+            width: 100px;
+            }
+            .asap2{
+                width: 50px;
+            }
+            h2{
+                font-size: poppins;
+            }
+            .career{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: center;
+                background-color: rgb(51, 47, 47);
+                width: 100%;
+                height: 100%;
+                padding-bottom: 30px;
+            }
+            .apple{
+                width: 40px;
+                color: #fff;
+            }
+            .apple2{
+                width: 23px;
+            }
+            .log{
+
+                width: 250px;
+                height: 40px;
+                padding-left: 20px;
+                margin-top: -15px;
+                outline: #5cc8d7ff;
+                border-radius: 3px;
+                border: none;
+            }
+            .news{
+                margin-top: -20px;
+                color: #fff;
+                font-family: poppins;
+            }
+            .btnc{
+                text-align: center;
+            }
+            .btn3{
+                width: 100px;
+                height: 45px;
+                border: 2px solid #00203fff;
+                border-radius: 3px;
+                color: #fff;
+                background: none;
+            }
+            .btn3:hover{
+                color: #5cc8d7ff;
+                border: 2px solid #5cc8d7ff;
+            }
+            @media screen and (max-width: 500px) {
+                .zaa{
+                    margin-top: 30px;
+                }
+                .zaa2{
+                    margin-left: 30px;
+                }
+                .log{
+                    width: 80%;
+                    margin-bottom: 10px;
+                }
+                .tin,
+                .ict{
+                    margin-top: -10px;
+                    margin-bottom: 10px;
+                }
+            }
+
+            .footer{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+            }
+            .footer-carrier{
+                width: 100%;
+                height: 100%;
+                background-color: rgba(37, 35, 35, 0.856);
+                
+            }
+            .pin{
+                margin-left: -40px;
+            }
+            li{
+                list-style: none;
+            }
+            .hyper{
+                color: lightgray;
+                font-size: poppins;
+                text-decoration: none;
+                font-size: 13px;
+            }
+            .hyper:hover{
+                color: #fff;
+                text-decoration: underline;
+            }
+            .about{
+                margin-left: 40px;
+            }
+            .br{
+               background: none;
+               border: none;
+            }
+            .more-info{
+                margin-right: 40px;
+            }
+            @media screen and (max-width: 500px) {
+                .payment{
+                    margin-right: 60px;
+                }
+                .buying{
+                    margin-left: 40px;
+                }
+                .right{
+                    margin-bottom: 70px;
+                }
+                
+            }
+            .loo{
+                color: #5cc8d7ff;
+                font-family: poppins;
+                font-size: 17px;
+            }
+            .h2{
+                color: lightgray;
+            }
+
+            .connect{
+                text-align: center;
+                padding-bottom: 40px;
+            }
+            .ul-con{
+                display: flex;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .linking{
+                margin: 10px;
+                height: 50px;
+            }
+            .right{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #0c0c0c;
+                width: 100%;
+            }
+            .line-up{
+                width: 35%;
+                height: 2px;
+                background-color: lightgray;
+            }
+            .copy5{
+                color: #fff;
+            }
+
+            .header-con4{
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 100%;
+                height: 50px;
+                position: fixed;
+                z-index: 100;
+                margin-top: 20px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin-top: 20px;
+               background-color: #0c0c0c;
+            }
+            @media screen and (min-width: 900px) {
+                .header-con4{
+                    display: none;
+                }
+            }
+            @media screen and (max-width: 500px) {
+                .footer-carrier{
+                    display: none;
+                }
+                .col a:hover{
+                    color: red;
+                }
+                .col{
+                    position: absolute;
+                    bottom: 100%;
+                }
+                .logo{
+                    position: relative;
+                }
+                
+            }
+
+            @media screen and (min-width: 900px) {
+                .header-con4{
+                    display: none;
+                }
+            }
+            @media screen and (max-width: 500px) {
+                .footer-carrier{
+                    display: none;
+                }
+                .col a:hover{
+                    color: red;
+                }
+                .col{
+                    position: absolute;
+                    bottom: 100%;
+                }
+                .logo{
+                    position: relative;
+                }
+            }
+            .button-6{
+               color: #fff;
+            }
+    .whatsapp-link{
+        width: 60px;
+        height: 60px;
+        background-color: rgb(46, 182, 46);
+        border: none;
+        border-radius: 50%;
+        position: fixed;
+        z-index: 100;
+        font-size: 40px;
+        height: 60px;
+        width: 60px;
+        right: 10px;
+        transition: 0.5s;
+        bottom: 150px;
+    }
+    
+    .whatsapp-link:hover{
+        transform: scale(1.1);
+    }
+
+    .connects{
+        text-decoration: none;
+        color: #00203fff;
+    }
+
+            .repeat{
+        border: none;
+        position: fixed;
+        right: 20px;
+        z-index: 100;
+        bottom: 40px;
+        background: none;
+        animation: bounce 0.5s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+
+    }
+    @keyframes bounce {
+            from {
+                transform: translate3d(0, 0, 0);
+            }
+            to {
+                transform: translate3d(0, 05px, 0);
+            }
+        }
+              
+        
+    </style>
+</head>
+<body>
+    <section class="search">
+        <div class="label-con3">
+            <div class="logo-menu">
+                <img class="logo2" src="ASSET/IMAGES/WhatsApp_Image_2023-05-04_at_06.34.18-removebg-preview.png" alt="">
+            </div>
+            <div class="chatz">
+                <a class="home-4" href="cart.html">
+                    <i class="fas fa-shopping-cart">cart</i>
+                </a>
+            </div>
+            </div>
+        <div class="box">
+            <div class="logo-con">
+                <img class="img25" src="ASSET/IMAGES/WhatsApp_Image_2023-05-04_at_06.34.18-removebg-preview.png" alt="">
+            </div>
+            <form class="form">
+                <input class="input" type="text" placeholder="Search Product,Brand and Categories">
+                <button class="gloo" type="search">Submit</button>
+            </form>
+            <!-- <button class="input2">Search</button> -->
+            <div class="container">
+                <button class="btn2">
+                    <i style="color: #ffff;" class='fas fa-user-alt'>Account</i>
+                </button>
+                <div class="content">
+                    <a href="./account.html">Login/<br>
+                        Sign Up</a> 
+                    <!-- <a href="">SIGN UP</a> -->
+                  
+                   
+                </div>
+            </div> 
+            <div class="container">
+                <button class="btn2">
+                    <i style="color: #ffff;" class="fa fa-question-circle">Help</i>
+                </button>
+                <div class="content">
+                    <a href="#">SIGN IN</a> 
+                    <a href="help.html">Contact US</a>
+                    <a href="#">Order</a>
+                    <a href="question.html">FAQs</a>               
+                </div>
+            </div> 
+            <button class="btn2">
+                <a href="cart.html">
+                    <i style="color: white;" class="fas fa-shopping-cart">cart</i>
+                </a>
+            </button>
+        </div>
+        
+        <header class="header-con">
+            <div class="row">
+                <div class="label-con">
+                    <label class="label">All Categories</label>
+                <!-- <img class="logo" src="ham123-removebg-preview.png" alt=""> -->
+                <i style="color: #fff; margin-top: 5px;" class="fa fa-bars"></i>
+                </div>
+                <div class="col">
+                    <a href="./index.html">Home</a> 
+                    <a href="./computer.html">Computing</a>
+                    <a href="./ph.html">Smartphones</a>
+                    <a href="apple.html">Apple Phones</a>
+                    <a href="./apple.html">Top Official</a>
+                    <a href="./index.html">Best Selling</a>
+                    <a href="./index.html">Other Categories</a>
+                </div>
+            </div>
+            <div>
+                <a class="linker" href="./index.html">
+                    <button class="btc">Home</button>
+                </a>
+            </div>
+            <div>
+                <a class="linker" href="./apple.html">
+                    <button class="btc">Top Official</button>
+                </a>
+            </div>
+            <div>
+                <a class="linker" href="./apple.html">
+                    <button class="btc">Best selling</button>
+                </a>
+            </div>
+            <div>
+                <a class="linker" href="./ph.html">
+                    <button class="btc">smartphones</button>
+                </a>
+            </div>
+    
+            <div>
+                <a class="linker" href="./index.html">
+                    <button class="btc">Other Categories</button>
+                </a>    
+                    <!-- <div>
+                <a class="linker" href="#">
+                    <button class="btc">Book Shopping</button>
+                </a>
+            </div>
+            <div>
+                <a class="linker" href="#">
+                    <button class="btc">Supermarket</button>
+                </a>
+            </div>
+            <div>
+                <a class="linker" href="#">
+                    <button class="btc">Gaming</button>
+                </a>
+            </div> -->
+            </div>
+          
+        
+        </header>
+    </section>
+
+    
+    <div class="cart">
+        <div class="cart2">
+            <i class="fas fa-shopping-cart carty">cart</i>
+        </div>
+        <h3>Your cart is empty!</h3>
+        <p class="p2">Browse our categories and discover our best deals!</p><br>
+        <button class="btn">
+            <a class="lin" href="./index.html">START SHOPPING</a>
+        </button>
+    </div>
+
+    <div class="row-col">
+        <div class="col5">
+            <p class="fix">&#10084;</p>
+            <img class="ident" src="ASSET/IMAGES/app3.webp" alt="">
+            <p class="p">
+                Apple iPhone 12 Pro
+            </p>
+            <p>₦469,999</p>
+            <button class="btn-container">
+                <a class="anchor" href="#">Add to cart &rarr;</a>
+            </button>
+           
+        </div>
+        <div class="col5">
+            <p class="fix">&#10084;</p>
+            <img class="ident" src="ASSET/IMAGES/well.webp" alt="">
+            <p class="p">
+                Xiaomi Redmi Note
+            </p>
+            <p>₦153,000</p>
+            <button class="btn-container">
+                <a class="anchor" href="#">Add to cart &rarr;</a>
+            </button>
+        </div>
+        <div class="col5">
+            <p class="fix">&#10084;</p>
+            <img class="ident" src="ASSET/IMAGES/phone4.jpg" alt="">
+            <p class="p">
+                Samsung Galaxy
+            </p>
+            <p>₦ 109,700</p>
+            <button class="btn-container">
+                <a class="anchor" href="#">Add to cart &rarr;</a>
+            </button>
+            
+        </div>
+        <div class="col5">
+            <p class="fix">&#10084;</p>
+            <img class="ident" src="ASSET/IMAGES/iphoone2.webp" alt="">
+            <p class="p">
+                Apple iPhone 11
+            </p>
+            <p>₦275,997</p>
+            <button class="btn-container">
+                <a class="anchor" href="#">Add to cart &rarr;</a>
+            </button>
+        
+        </div>
+        <div class="col5">
+            <p class="fix">&#10084;</p>
+            <img class="ident" src="ASSET/IMAGES/saved3.webp" alt="">
+            <p class="p">
+                Apple iPhone 12 Pro
+            </p>
+            <p>₦545,000</p>
+            <button class="btn-container">
+                <a class="anchor" href="#">Add to cart &rarr;</a>
+            </button>
+        </div>
+        <div class="col5">
+            <p class="fix">&#10084;</p>
+            <img class="ident" src="ASSET/IMAGES/lack2.webp" alt="">
+            <p class="p">
+                Galaxy S23 Ultra
+            </p>
+            <p>#909,999</p>
+            <button class="btn-container">
+                <a class="anchor" href="#">Add to cart &rarr;</a>
+            </button>
+        </div>
+        <div class="col5">
+            <p class="fix">&#10084;</p>
+            <img class="ident" src="ASSET/IMAGES/note.webp" alt="">
+            <p class="p">
+                Galaxy Note 10 
+            </p>
+            <p>₦239,999</p>
+            <button class="btn-container">
+                <a class="anchor" href="#">Add to cart &rarr;</a>
+            </button>
+        </div>
+    </div>
+
+    
+    <div class="row-col">
+        <div class="col5">
+            <p class="fix">&#10084;</p>
+            <img class="ident" src="ASSET/IMAGES/pro1.jpg" alt="">
+            <p class="p">
+                Infinix Note 10 
+            </p>
+            <p>₦165,000</p>
+            <button class="btn-container">
+                <a class="anchor" href="#">Add to cart &rarr;</a>
+            </button>
+           
+        </div>
+        <div class="col5">
+            <p class="fix">&#10084;</p>
+            <img class="ident" src="ASSET/IMAGES/pro2.jpg" alt="">
+            <p class="p">
+                Infinix Zero X
+            </p>
+            <p>₦195,987</p>
+            <button class="btn-container">
+                <a class="anchor" href="#">Add to cart &rarr;</a>
+            </button>
+            
+        </div>
+        <div class="col5">
+            <p class="fix">&#10084;</p>
+            <img class="ident" src="ASSET/IMAGES/pow2.jpg" alt="">
+            <p class="p">
+                Tecno Spark 10C
+            </p>
+            <p>₦184,99</p>
+            <button class="btn-container">
+                <a class="anchor" href="#">Add to cart &rarr;</a>
+            </button>
+        </div>
+        <div class="col5">
+            <p class="fix">&#10084;</p>
+            <img class="ident" src="ASSET/IMAGES/pow6.jpg" alt="">
+            <p class="p">
+                Tecno Phantom X
+            </p>
+            <p>₦ 21,390</p>
+            <button class="btn-container">
+                <a class="anchor" href="#">Add to cart &rarr;</a>
+            </button>
+        </div>
+        <div class="col5">
+            <p class="fix">&#10084;</p>
+            <img class="ident" src="ASSET/IMAGES/pow7.jpg" alt="">
+            <p class="p">
+                Tecno Spark 9 Pro
+            </p>
+            <p>₦109,000</p>
+            <button class="btn-container">
+                <a class="anchor" href="#">Add to cart &rarr;</a>
+            </button>
+           
+        </div>
+        <div class="col5">
+            <p class="fix">&#10084;</p>
+            <img class="ident" src="ASSET/IMAGES/pow8.jpg" alt="">
+            <p class="p">
+                Tecno Spark 9 Pro
+            </p>
+            <p>₦108,000</p>
+            <button class="btn-container">
+                <a class="anchor" href="#">Add to cart &rarr;</a>
+            </button>
+        </div>
+        <div class="col5">
+            <p class="fix">&#10084;</p>
+            <img class="ident" src="ASSET/IMAGES/pow5.jpg" alt="">
+            <p class="p">
+                Tecno Pop 7
+            </p>
+            <p>₦56,800</p>
+            <button class="btn-container">
+                <a class="anchor" href="#">Add to cart &rarr;</a>
+            </button>
+        </div>
+    </div>
+
+
+
+    <div class="row-col">
+        <div class="col5">
+            <p class="fix">&#10084;</p>
+            <img class="ident" src="ASSET/IMAGES/hp5.jpg" alt="">
+            <p class="p">
+                Hp 15 Intel Pentium
+            </p>
+            <p>₦ 269,000</p>
+            <button class="btn-container">
+                <a class="anchor" href="#">Add to cart &rarr;</a>
+            </button>
+           
+        </div>
+        <div class="col5">
+            <p class="fix">&#10084;</p>
+            <img class="ident" src="ASSET/IMAGES/hp4.jpg" alt="">
+            <p class="p">
+                Lenovo Ideapad 
+            </p>
+            <p>₦ 158,070</p>
+            <button class="btn-container">
+                <a class="anchor" href="#">Add to cart &rarr;</a>
+            </button>
+            
+        </div>
+        <div class="col5">
+            <p class="fix">&#10084;</p>
+            <img class="ident" src="ASSET/IMAGES/hp6.jpg" alt="">
+            <p class="p">
+                DELL Latitude 13
+            </p>
+            <p>₦239,999</p>
+            <button class="btn-container">
+                <a class="anchor" href="#">Add to cart &rarr;</a>
+            </button>
+        </div>
+        <div class="col5">
+            <p class="fix">&#10084;</p>
+            <img class="ident" src="ASSET/IMAGES/hp7.jpg" alt="">
+            <p class="p">
+                DELL Latitude 3420-14"
+            </p>
+            <p>₦1,00,000</p>
+            <button class="btn-container">
+                <a class="anchor" href="#">Add to cart &rarr;</a>
+            </button>
+        </div>
+        <div class="col5">
+            <p class="fix">&#10084;</p>
+            <img class="ident" src="ASSET/IMAGES/hp9.jpg" alt="">
+            <p class="p">
+                Macbook Pro 14 
+            </p>
+            <p>₦512,000</p>
+            <button class="btn-container">
+                <a class="anchor" href="#">Add to cart &rarr;</a>
+            </button>
+           
+        </div>
+        <div class="col5">
+            <p class="fix">&#10084;</p>
+            <img class="ident" src="ASSET/IMAGES/hp10.jpg" alt="">
+            <p class="p">
+                DELL Pavilion 14
+            </p>
+            <p>₦925,000</p>
+            <button class="btn-container">
+                <a class="anchor" href="#">Add to cart &rarr;</a>
+            </button>
+        </div>
+        <div class="col5">
+            <p class="fix">&#10084;</p>
+            <img class="ident" src="ASSET/IMAGES/hp5.jpg" alt="">
+            <p class="p">
+                Hp 15 Intel Pentium 
+            </p>
+            <p>₦ 269,000</p>
+            <button class="btn-container">
+                <a class="anchor" href="#">Add to cart &rarr;</a>
+            </button>
+        </div>
+    </div>
+
+    <div class="career">
+        <div class="zaa">
+            <img class="asap"  src="ASSET/IMAGES/WhatsApp_Image_2023-05-04_at_06.08.37-removebg-preview.png" alt="">
+        </div>
+        <div class="zaa2">
+            <h2 style="color: #fff;">NEW TO AUSMOBILE?</h2>
+            <p class="news">
+                Subscribe to our newsletter to get updates on our latest offers!
+            </p>
+            <div>
+                <input class="log" type="text" placeholder="Enter Your Email">
+                <button class="btn3">Male</button>
+                <button class="btn3">Female</button>
+            </div>
+        </div>
+        <div class="download">
+            <label style="color: #fff;" for="">DOWNLOAD AUSMOBILE FREE APP</label><br>
+            <label style="color: #fff;" for="">Get access to exclusive offers!</label><br>
+            <button class="btcn">
+                <img class="apple" src="ASSET/IMAGES/Apple-Logo.png" alt="">
+                <a class="connects" href="https://www.apple.com"> Download on the<br>Apple Store
+                </a>
+            </button>
+            <button class="btcn">
+                <img class="apple2" src="ASSET/IMAGES/play.png" alt="">
+                <a class="connects" href="https://www.playstore.com">Download on the<br>playstore</a>
+                <!-- <span style="margin-left: 20px;"></span> -->
+            </button>
+        </div>
+    </div>
+    <div class="footer-carrier">
+        <div class="footer">
+            <div class="about">
+                <h2 class="h2">ABOUT AUSMOBILE</h2>
+                <ul class="pin">
+                    <li>
+                        <a class="hyper" href="about.html">About US</a>
+                    </li>
+                    <li>
+                        <a  class="hyper" href="./help.html">Contact Us</a>
+                    </li>
+                    <li>
+                        <a class="hyper" href="./term.html">Terms & Conditions</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="payment">
+                <h2 class="h2">QUICKLINKS</h2>
+                <ul class="pin">
+                    <li>
+                        <a class="hyper" href="./apple.html">Top Official</a>
+                    </li>
+                    <li>
+                        <a class="hyper" href="./ph.html">Smartphones</a>
+                    </li>
+                    <li>
+                        <a class="hyper" href="./index.html">Others</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="buying">
+                <h2 class="h2">BUYING ON ASAP</h2>
+                <ul class="pin">
+                    <li>
+                        <a class="hyper" href="#">Buyer Safty Center</a>
+                    </li>
+                    <li>
+                        <a class="hyper" href="question.html">FAQs</a>
+                    </li>
+                    <li>
+                        <a class="hyper" class="hyper" href="delivery.html">Delivery</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="more-info">
+                <h2 class="h2">MORE INFO</h2>
+                <ul class="pin">
+                    <li>
+                        <a class="hyper" href="./track">Track Order</a>
+                    </li>
+                    <li>
+                        <a class="hyper" href="order.html">Order</a>
+                    </li>
+                    <li>
+                        <a class="hyper" href="./privacy.html">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="connect">
+            <h2 class="h2">CONNECT WITH US</h2>
+                    <a class="linking" href="https://www.facebook.com">
+                        <i style="color: #fff; font-size: 20px;" class='fab fa-facebook-f'></i>
+                    </a>
+                    <a class="linking" href="https://www.google.com/gmail">
+                        <i style="color: #fff; font-size: 20px;" class="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
+                    <a class="linking"  href="https://www.instagram.com">
+                        <i style="color: #fff; font-size: 20px;" class='fa fa-instagram'></i>
+                    </a>
+        </div>
+    </div>
+    <div class="right">
+        <div class="line-up"></div>
+        <div>
+            <p class="copy5">&#169; 2023 Ausmobilestore.All rights reserved</p>
+        </div>
+        <div class="line-up"></div>
+    </div>
+    </div>
+    
+       <header class="header-con4">
+                <div class="row">
+                    <div class="label-con">
+                        <label class="label"></label>
+                    <!-- <img class="logo" src="ham123-removebg-preview.png" alt=""> -->
+                    <i style="color: #fff; margin-top: 5px;" class="fa fa-bars"></i>
+                    </div>
+                    <div class="col">
+                        <a href="./index.html">Home</a> 
+                    <a href="./computer.html">Computing</a>
+                    <a href="./ph.html">Smartphones</a>
+                    <a href="apple.html">Apple Phones</a>
+                    <a href="./apple.html">Top Official</a>
+                    <a href="./index.html">Best Selling</a>
+                    <a href="./index.html">Other Categories</a>
+                    </div>
+                </div>
+                <div>
+                    <a class="linker" href="contact.html">Contact US</a>
+                </div>
+                <div>
+                    <a class="linker" href="#">Payment</a>
+                </div>
+                <div>
+                    <a class="linker" href="cart.html">
+                        <i class="fas fa-shopping-cart">cart</i>
+                    </a>
+                </div>
+                <div>
+                    <a class="linker" href="index.html">
+                            <a href="index.html">
+                                <i style="font-size: 30px; margin-right: 30px; color: #fff;" class="fa fa-home" aria-hidden="true"></i>
+                            </a>
+                    </a>
+                </div>
+           
+            </header>
+
+
+            
+            <button class="whatsapp-link"> 
+                <a href="https://api.whatsapp.com/send?phone=
+                +2347059051442&text=Hello We are here to help u!!">
+                <i class="fa fa-whatsapp button-6"></i>
+                </a>
+                </button>
+
+                
+                <button class="repeat" id="repeat">
+                    <a href="#">
+                        <i class='fas fa-angle-double-up' style='font-size:38px;color:rgba(26, 115, 150, 0.89)'></i>
+                    </a>
+                </button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <script>
+
+                        let mybutton = document.getElementById("repeat");
+
+                        // When the user scrolls down 20px from the top of the document, show the button
+                        window.onscroll = function() {scrollFunction()};
+
+                        function scrollFunction() {
+                        if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+                            mybutton.style.display = "block";
+                        } else {
+                            mybutton.style.display = "none";
+                        }
+                        }
+
+
+                </script>
+
+</body>
+</html>

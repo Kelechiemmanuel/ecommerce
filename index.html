@@ -1,0 +1,2000 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="ASSET/IMAGES/WhatsApp_Image_2023-04-20_at_12.31.10-removebg-preview.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"> 
+    <title>Aus mobile Homepage</title>
+    <style>
+               @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800;900&display=swap');
+
+
+body{
+    background-color: whitesmoke;
+    margin: 0;
+}
+*{
+    font-family: poppins;
+    scroll-behavior: smooth;
+}
+i{
+    font-family: poppins;
+}
+a{
+    font-family: poppins;
+}
+
+.search{
+    position: fixed;
+    background-color: lavender;
+    z-index: 60;
+    width: 100%;
+    height: 100px;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+.img25{
+    width: 70px;
+}
+.logo-con{
+    margin-top: 10px;
+}
+    .container{
+    display: inline-block;
+    position: relative;
+    background-color: whitesmoke;
+}
+.container:hover .content{
+    display: block;
+}
+.btn{
+    color: black;
+    background-color: transparent;
+    border: none;
+    height: 40px;
+}
+.content{
+    position: absolute;
+    width: 200px;
+    margin-left: -50px;
+    height: 110px;
+    margin-top: 1px;
+    border-radius: 5px 5px 5px 5px;
+    background-color: white;
+    display: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    overflow: auto;
+}
+.content a{
+    display: block;
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+}
+.content a:hover{
+color: #00203fff;
+background-color: #ffff;
+
+}
+.logo{
+    width: 40px;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lavender;
+   padding-left: 40px;
+   padding-right: 40px;
+}
+.input{
+    width: 90%;
+    height: 35px;
+    border: 1px solid transparent;
+    padding-left: 13px;
+    border-radius: 5px 0 0  5px;  
+    outline: none;
+}
+.input2{
+    width: 90px;
+    text-align: center;
+    height: 40px;
+    color: white;
+    border: none;
+    font-size: 15px;
+    border-radius: 3px;
+    background-color: #00203fff;
+}
+.input2:hover{
+    opacity: 0.5;
+}
+.form{
+    display: flex;
+    border: 1px solid  #00203fff;
+    background-color: rgb(175, 196, 199);
+    padding-right: 10px;
+    justify-content: space-between;
+    width: 50%;
+    border-radius: 5px;
+}
+.gloo{
+    text-indent: -999px;
+    overflow: hidden;
+    color: #00203fff;
+    margin: 0;
+    border-radius: 5px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+    border: 5px solid transparent;
+}
+.row{
+    display: inline-block;
+    position: relative;
+}
+.col{
+    position: absolute;
+    width: 500px;
+    left: -50px;
+    height: 50vh;
+    display: none;
+    /* padding-left: 20px; */
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    overflow: auto;
+}
+
+.row:hover .col{
+    display: block;
+}
+.col a{
+    display: block;
+    padding: 10px;
+    margin-left: 10px;
+    color: black;
+    text-decoration: none;
+    transition: all 0.23s;
+}
+.col a:hover{
+color: red;
+transform: scaleY(2.1);
+
+}
+.home{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 155px;
+}
+@media screen and (max-width: 900px) {
+    .home{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .center{
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-position: right;
+    }
+    .right{
+        display: none;
+    }
+    .right2{
+        display: none;
+    }
+    
+}
+.right{
+    height: 50vh;
+    width: 30%;
+   background-image: url(ASSET/IMAGES/series4.jpg);
+    background-position: right;
+    background-size: cover;
+    border-radius: 15px 0 0 15px;
+}
+
+.center{
+    height: 50vh;
+    width: 70%;
+    /* background-color: #00203fff; */
+}
+
+.pro-max2{
+    height: 50vh;
+    width: 99%;
+    margin: 0 5px 0 5px;
+    background-position: center;
+    background-size: calc(100% - (-2%));
+    background-repeat: no-repeat;
+    background-position: left;
+    background-image: url(ASSET/IMAGES/appno.png);
+}
+.pro-max{
+    height: 50vh;
+    width: 99%;
+    margin: 0 5px 0 5px;
+    background-position: center;
+    background-size: calc(100% - (-20%));
+    background-repeat: no-repeat;
+    background-image: url(ASSET/IMAGES/redmij.jpg);
+}
+.pro-max3{
+    height: 50vh;
+    width: 99%;
+    margin: 0 5px 0 5px;
+    background-position: center;
+    background-size: calc(100% - (-5%));
+    background-repeat: no-repeat;
+    background-image: url(ASSET/IMAGES/macbook.png);
+}
+
+@media screen and (max-width: 500px) {
+    .center{
+        background: none;
+        margin-top: -100px;
+        margin-bottom: -100px;
+    }
+    .carousel-indicators{
+        display: none;
+    }
+}
+@media screen and (max-width: 900px) {
+    .center{
+        background: none;
+        margin-top: -100px;
+        margin-bottom: -60px;
+    }
+    .carousel-indicators{
+        display: none;
+    }
+}
+
+.row-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 240px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: white;
+}
+.row-col7{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 240px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    background-color: white;
+}
+@media screen and (max-width: 900px) {
+    .row-col7{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        height: 500px;
+    }
+    
+}
+@media screen and (max-width: 500px) {
+    .row-col7{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        height: 1000px;
+        margin-top: 50px;
+    }
+    
+}
+@media screen and (max-width: 900px) {
+    .row-col{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 500px;
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .row-col{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 930px;
+        margin-bottom: 50px;
+    }
+}
+.row-col2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 320px;
+    margin-top: 5px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 900px) {
+    .row-col2{
+        display: flex;
+        flex-wrap: wrap;
+        height: 700px;
+        justify-content: center;
+        margin-bottom: 770px;
+    }
+    .col6{
+        width: 200px;
+        text-align: center;
+        height: 250px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .row-col2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 50px;
+        height: 1200px;
+    }
+    .col6{
+        width: 200px;
+        text-align: center;
+        height: 250px;
+    }
+}
+.col6{
+    margin: 8px;
+    width: 170px;
+    height: 250px;
+    transition: all 0.23s;
+}
+.col10{
+    width: 150px;
+    height: 260px;
+    transition: all 0.23s;
+    margin: 8px;
+    margin: 20px;
+}
+.col8{
+    margin: 8px;
+    width: 170px;
+    height: 300px;
+    transition: all 0.23s;
+}
+.col6:hover{
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transform: scale(1.1);
+}
+.col5{
+    margin: 15px;
+    height: 30vh;
+    margin-top: 20px;
+    transition: all 0.23s;
+}
+.col5:hover{
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transform: scale(1.1);
+}
+.col8:hover{
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transform: scale(1.1);
+}
+.col10:hover{
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transform: scale(1.1);
+}
+
+.ident{
+    width: 150px;
+}
+.p{
+    text-align: center;
+}
+p,
+del{
+    font-family: poppins;
+    font-size: 13px;
+    margin-top: 2px;
+    color: rgb(29, 29, 29);
+}
+del{
+    text-align: center;
+    margin-left: 45px;
+}
+.row4{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 320px;
+    margin-top: 5px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+.row-4{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    height: 320px;
+    margin-top: 5px;
+    background-color: white;
+}
+@media screen and (max-width: 900px) {
+    .row4{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 900px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .row-4{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 700px;
+        margin-bottom: 50px;
+    }
+
+}
+@media screen and (max-width: 500px) {
+    .row-4{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 1230px;
+        margin-bottom: 100px;
+    }
+
+}
+.space{
+    height: 20px;
+    width: 100%;
+    background-color: white;
+}
+.space2{
+    height: 30px;
+    width: 100%;
+    background-color: #00203fff;
+}
+.row8{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    padding-top: 10px;
+    margin-top: 5px;
+    background-color: white;
+}
+@media screen and (max-width: 500px) {
+    .row8{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        height: 1350px;
+        margin-top: 50px;
+
+    }
+    .col8{
+        width: 200px;
+        text-align: center;
+        height: 300px;
+        margin-top: 10px;
+
+    }
+}
+
+h3{
+    text-align: center;
+    font-family: poppins;
+}
+i{
+    font-family: poppins;
+    font-size: 15px;
+}
+.btn2{
+    height: 40px;
+    width: 100px;
+    border-radius: 3px;
+    background-color: #00203fff;
+    border: none;
+}
+.btn2:hover{
+    opacity: 0.5;
+}
+.fix{
+    position: absolute;
+    color: white;
+    background-color: #00203fff;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 2px;
+     }
+.c0l10{
+    position: relative;
+}
+.col8{
+    position: relative;
+}
+.col6{
+    position: relative;
+}
+.content2{
+    width: 140px;
+    text-align: center;
+    margin-bottom: -1px;
+}
+.content3{
+    width: 140px;
+    text-align: center;
+    margin-bottom: -1px;
+}
+.deli{
+    margin-right: 45px;
+}
+@media screen and (min-width: 750px) {
+    
+    
+}
+.header-con{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+   background-color: #00203fff;
+    margin-bottom: 10px;
+}
+.label-con{
+   display: flex;
+}
+.label{
+   margin-right: 8px;
+   font-family: poppins;
+   color: #ffff;
+}
+.all-linkerz{
+    display: flex;
+    justify-content: space-between;
+    margin-left: -150;
+}
+a{
+    font-family: poppins;
+}
+.btc{
+    background: none;
+    border: none;
+    font-family: poppins;
+    color: #ffff;
+    height: 50px;
+    width: 120px;
+}
+.btc:hover{
+    background: white;
+    color: gray;
+    transition: all 1.5s;
+}
+.linker{
+    color: #ffff;
+    text-decoration: none;
+    height: 100px;
+    width: 120px;
+   
+}
+.linker:hover{
+    color: gray;
+    
+}
+@media screen and (max-width: 900px) {
+    .container{
+        display: none;
+    }
+    .header-con{
+        display: none;
+    }
+    .img25{
+    display: none;
+    }
+    .btn2{
+        display: none;
+    }
+    .form{
+        width: 80%;
+        margin-right: 60px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+  
+
+}
+.logo2{
+    width: 70px;
+}
+.logo-menu{
+    margin-left: 10px;
+    margin-top: 25px;
+}
+.home-4{
+    color: #00203fff;
+}
+.chatz{
+    margin-right: 10px;
+}
+.label-con3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    /* background-color: whitesmoke; */
+    margin-bottom: 10px;
+}
+@media screen and (min-width: 900px) {
+    .label-con3{
+        display: none;
+    }
+}
+
+
+
+.carousel {
+position: relative;
+height: 50vh;
+
+}
+#slideset1 > *:nth-child(1) {
+    animation-delay: 0s;
+    animation-name: slideset1;
+}
+@keyframes slideset1{
+    from {
+                transform: translate3d(0, 0, 0);
+            }
+            to {
+                transform: translate3d(0, 05px, 0);
+            }
+}
+#slideset1 > *:nth-child(2) {animation-delay: 4s}
+#slideset1 > *:nth-child(3) {animation-delay: 8s}
+
+.carousel-inner {
+position: relative;
+overflow: hidden;
+width: 100%;
+animation: slide 20s infinite;
+transition: 1s;
+}
+
+.carousel-open:checked + .carousel-item {
+position: static;
+opacity: 100;
+}
+
+.carousel-item {
+position: absolute;
+}
+
+.carousel-item img {
+display: block;
+/* height: 50vh; */
+object-fit: cover;
+object-position: bottom;
+width: 100%;
+position: relative;
+}
+.carousel-item{
+max-width: 100%;
+display: block;
+
+margin: auto;
+height: 500px;
+
+}
+
+.carousel-control {
+background: rgba(0, 0, 0, 0.678);
+border-radius: 50%;
+color: #fff;
+cursor: pointer;
+display: none;
+font-size: 40px;
+height: 40px;
+line-height: 35px;
+position: absolute;
+top: 30%;
+-webkit-transform: translate(0, -50%);
+cursor: pointer;
+-ms-transform: translate(0, -50%);
+transform: translate(0, -50%);
+text-align: center;
+width: 40px;
+animation: slide 20s infinite;
+transition: 1s;
+z-index: 50;
+}
+
+.carousel-control.prev {
+left: 2%;
+}
+
+.carousel-control.next {
+right: 2%;
+}
+
+.carousel-control:hover {
+background: rgba(0, 0, 0, 0.8);
+color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+display: block;
+}
+
+.carousel-indicators {
+list-style: none;
+margin: 0;
+padding: 0;
+position: absolute;
+bottom: 28%;
+left: 0;
+right: 40%;
+text-align: center;
+z-index: 10;
+}
+
+.carousel-indicators li {
+display: inline-block;
+margin: 0 5px;
+}
+
+.carousel-bullet {
+color: gray;
+cursor: pointer;
+display: block;
+font-size: 35px;
+margin-top: -43px;
+}
+
+.carousel-bullet:hover {
+color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+color: #00203fff;
+
+}
+
+#title {
+width: 100%;
+position: absolute;
+padding: 0px;
+margin: 0px auto;
+text-align: center;
+font-size: 27px;
+color: rgba(255, 255, 255, 1);
+z-index: 9999;
+text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+}
+.asap{
+width: 100px;
+margin-top: 40px;
+}
+.asap2{
+width: 50px;
+}
+h2{
+font-family: poppins;
+}
+.career{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(51, 47, 47);
+    width: 100%;
+    height: 100%;
+    padding-bottom: 30px;
+}
+.apple{
+    width: 40px;
+    color: #fff;
+}
+.apple2{
+    width: 23px;
+}
+.log{
+
+    width: 250px;
+    height: 40px;
+    padding-left: 20px;
+    margin-top: -15px;
+    outline: #5cc8d7ff;
+    border-radius: 3px;
+    border: none;
+}
+.news{
+    margin-top: -20px;
+    color: #fff;
+    font-family: poppins;
+}
+.btnc{
+    text-align: center;
+}
+.btn3{
+    width: 100px;
+    height: 45px;
+    border: 2px solid #00203fff;
+    border-radius: 3px;
+    color: #fff;
+    background: none;
+}
+.btn3:hover{
+    color: #5cc8d7ff;
+    border: 2px solid #5cc8d7ff;
+}
+@media screen and (max-width: 500px) {
+    .zaa{
+        margin-top: 30px;
+    }
+    .zaa2{
+        margin-left: 30px;
+    }
+    .log{
+        width: 80%;
+        margin-bottom: 10px;
+    }
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.footer-carrier{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(37, 35, 35, 0.856);
+    
+}
+.pin{
+    margin-left: -40px;
+}
+li{
+    list-style: none;
+}
+.hyper{
+    color: lightgray;
+    font-size: poppins;
+    text-decoration: none;
+    font-size: 13px;
+}
+.hyper:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+.about{
+    margin-left: 40px;
+}
+.more-info{
+    margin-right: 40px;
+}
+@media screen and (max-width: 500px) {
+    .payment{
+        margin-right: 60px;
+    }
+    .buying{
+        margin-left: 40px;
+    }
+    
+}
+.h2{
+    color: lightgray;
+}
+.connect{
+    text-align: center;
+    padding-bottom: 40px;
+}
+.ul-con{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.linking{
+    margin: 10px;
+    height: 50px;
+}
+.rightup{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0c0c0c;
+    width: 100%;
+    /* margin-bottom: 100px; */
+}
+.line-up{
+    width: 35%;
+    height: 2px;
+    background-color: lightgray;
+}
+.copy5{
+    color: #fff;
+}
+
+.header-con4{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    z-index: 100;
+    margin-top: 20px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #0c0c0c;
+}
+@media screen and (min-width: 900px) {
+    .header-con4{
+        display: none;
+    }
+}
+@media screen and (max-width: 500px) {
+    .footer-carrier{
+        display: none;
+    }
+    .col a:hover{
+        /* background-color: #0c0c0c; */
+        color: red;
+        padding-left: -100px;
+    }
+    .col{
+        position: absolute;
+        height: 50vh;
+        padding-left: 40px;
+        bottom: 3%;
+    }
+    .logo{
+        position: relative;
+    }
+    
+}
+h1{
+    font-family: poppins;
+}
+.best-selling{
+    margin-top: 20px;
+    padding-top: 10px;
+    margin-bottom: -30px;
+    width: 100%;
+    height: 40px;
+    background-color: #00203fff;
+}
+.best-sellings{
+    margin-top: 20px;
+    padding-top: 10px;
+    margin-bottom: -10px;
+    width: 100%;
+    height: 40px;
+    background-color: #00203fff;
+}
+.best{
+    margin-left: 50px;
+    height: 30px;
+    color: #fff;
+}
+.web{
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: whitesmoke;
+}
+.lock{
+    width: 80%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-top: -50px;
+}
+.describe{
+    text-align: center;
+    width: 80%;
+    padding-top: 20px;
+    height: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+.detail{
+    padding-left: 30px;
+    padding-right: 20px;
+    margin-top: 20px;
+    font-family: poppins;
+    font-size: 13px;
+    opacity: 0.8;
+}
+.new2{
+    margin-left: 30px;
+}
+li{
+    font-family: poppins;
+}
+    .button{
+        color: white;
+    }
+    .content{
+        text-align: center;
+    }
+    .content3{
+        margin-left: 10px;
+    }
+    .button:hover{
+        transform: scale(1.1);
+    }
+    .whatsapp-link{
+        width: 60px;
+        height: 60px;
+        background-color: rgb(46, 182, 46);
+        border: none;
+        border-radius: 50%;
+        position: fixed;
+        z-index: 100;
+        font-size: 40px;
+        height: 60px;
+        width: 60px;
+        right: 10px;
+        transition: 0.5s;
+        bottom: 150px;
+    }
+    
+    .whatsapp-link:hover{
+        transform: scale(1.1);
+    }
+    .repeat{
+        border: none;
+        display: none;
+        position: fixed;
+        right: 20px;
+        z-index: 100;
+        bottom: 40px;
+        background: none;
+        animation: bounce 0.5s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+
+    }
+    @keyframes bounce {
+            from {
+                transform: translate3d(0, 0, 0);
+            }
+            to {
+                transform: translate3d(0, 05px, 0);
+            }
+        }
+    html{
+        scroll-behavior: smooth;
+    }
+    .btm{
+        color: #fff;
+
+    }
+
+
+
+
+    
+    </style>
+</head>
+<body>
+    <section class="search">
+        <div class="label-con3">
+            <div class="logo-menu">
+                <img class="logo2" src="ASSET/IMAGES/WhatsApp_Image_2023-05-04_at_06.34.18-removebg-preview.png" alt="">
+            </div>
+            <div class="chatz">
+                <!-- <a class="home-4" href="index.html">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                </a> -->
+                <a style="text-decoration: none;" class="home-4" href="cart.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    <label for="">cart</label>
+                </a>
+            </div>
+            </div>
+        <div class="box">
+            <div class="logo-con">
+                <img class="img25" src="ASSET/IMAGES/WhatsApp_Image_2023-05-04_at_06.34.18-removebg-preview.png" alt="">
+            </div>
+            <form class="form">
+                <input class="input" type="text" placeholder="Search Product,Brand and Categories">
+                <button class="gloo" type="search">Submit</button>
+            </form>
+            <!-- <button class="input2">Search</button> -->
+            <div class="container">
+                <button class="btn2">
+                    <i style="color: #ffff;" class='fas fa-user-alt'></i>
+                    <label style="color: #fff;" for="">Account</label>
+                </button>
+                <div class="content">
+                    <a href="account.html">Login/<br>
+                        Sign up</a> 
+                </div>
+            </div> 
+            <div class="container">
+                <button class="btn2">
+                    <i class="fa fa-question-circle btm"></i>
+                    <label style="color: #fff;" for="">Help</label>
+                </button>
+                <div class="content">
+                    <a href="./help.html">Contact Us</a>
+                    <a href="./about.html">About Us</a>
+                    <a href="./question.html">FAQs</a>              
+                </div>
+            </div> 
+            <button class="btn2">
+                <i style="color: white;" class="fas fa-shopping-cart"></i>
+                    <label style="color: #fff;" for="">Cart</label>
+            </button>
+        </div>
+        
+        <header class="header-con">
+            <div class="row">
+                <div class="label-con">
+                    <label class="label">All Categories</label>
+                <!-- <img class="logo" src="ham123-removebg-preview.png" alt=""> -->
+                <i style="color: #fff; margin-top: 5px;" class="fa fa-bars"></i>
+                </div>
+                <div class="col">
+                    <a href="./index.html">Home</a> 
+                    <a href="./computer.html">Computing</a>
+                    <a href="./ph.html">Smartphones</a>
+                    <a href="apple.html">Apple Phones</a>
+                    <a href="./apple.html">Top Official</a>
+                    <a href="./index.html">Best Selling</a>
+                    <a href="./index.html">Other Categories</a>
+                </div>
+            </div>
+             
+            <div>
+                <a class="linker" href="./index.html">
+                    <button class="btc">Home</button>
+                </a>
+            </div>
+            <div>
+                <a class="linker" href="./apple.html">
+                    <button class="btc">Top Official</button>
+                </a>
+            </div>
+            <div>
+                <a class="linker" href="./apple.html">
+                    <button class="btc">Best selling</button>
+                </a>
+            </div>
+            <div>
+                <a class="linker" href="./ph.html">
+                    <button class="btc">smartphones</button>
+                </a>
+            </div>
+    
+            <div>
+                <a class="linker" href="./index.html">
+                    <button class="btc">Other Categories</button>
+                </a>
+            </div>
+        
+        </header>
+    </section>
+    
+        <div class="home">
+            <div class="right">
+                <!-- <img class="improving" src="img.jpg" alt=""> -->
+            </div>
+            <div class="center">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+                        <div class="carousel-item">
+                            <div class="pro-max">
+                                 <!-- <img src="apple-iphone-14-pro-max-1.jpg" alt=""> -->
+                            </div>
+                        
+                        </div>
+                        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+                        <div class="carousel-item">
+                            <div class="pro-max2">
+                                <!-- <img src="infinix.jpg" alt=""> -->
+                            </div>
+                           
+                        </div>
+                        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+                        <div class="carousel-item">
+                            <!-- <img style="object-position: left;" src="soft.webp" alt=""> -->
+                            <div class="pro-max3">
+    
+                            </div>
+                        </div>
+                        <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+                        <label for="carousel-2" class="carousel-control next control-1">›</label>
+                        <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+                        <label for="carousel-3" class="carousel-control next control-2">›</label>
+                        <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+                        <label for="carousel-1" class="carousel-control next control-3">›</label>
+                        <ol class="carousel-indicators">
+                            <li>
+                                <label for="carousel-1" class="carousel-bullet">•</label>
+                            </li>
+                            <li>
+                                <label for="carousel-2" class="carousel-bullet">•</label>
+                            </li>
+                            <li>
+                                <label for="carousel-3" class="carousel-bullet">•</label>
+                            </li>
+                        </ol>
+                      </div>
+                  </div>
+    
+    
+            </div>
+            <div class="right2"></div>
+        </div>
+    
+        <div class="best-selling">
+            <a class="best" href="apple.html">Top Official</a>
+        </div>
+        <div class="row-col">
+            <div class="col5">
+               <a href="complete.html">
+                <img class="ident" src="ASSET/IMAGES/iphoone2.webp" alt="">
+                <p class="p">Apple iPhone 11 </p>
+               </a>
+            </div>
+            <div class="col5">
+                <img class="ident" src="ASSET/IMAGES/app3.webp" alt="">
+                <p class="p">Apple iPhone 12 Pro</p>
+            </div>
+            <div class="col5">
+                <img class="ident" src="ASSET/IMAGES/promax.webp" alt="">
+                <p class="p">Apple iPhone 13 Pro Max</p>
+            </div>
+            <div class="col5">
+                <img class="ident" src="ASSET/IMAGES/aalock.webp" alt="">
+                <p class="p">Apple iPhone 14 Plus</p>
+            </div>
+            <div class="col5">
+                <img class="ident" src="ASSET/IMAGES/monie.webp" alt="">
+                <p class="p"> Apple iPhone 12</p>
+            </div>
+            <div class="col5">
+                <img class="ident" src="ASSET/IMAGES/amp.webp" alt="">
+                <p class="p">Apple Iphone Xs Max </p>
+            </div>
+            <div class="col5">
+                <img class="ident" src="ASSET/IMAGES/load.webp" alt="">
+                <p class="p">Apple Ipad Pro</p>
+            </div>
+        </div>
+        
+        
+        <div class="row-4">
+            <div class="col10">
+                <p class="fix">-50%</p>
+                <img class="ident" src="ASSET/IMAGES/save.webp" alt="">
+                <p class="content2">
+                    Apple Ipad Pro 2020 - 11" - Wi-fi Only - 128gb - Space Gray
+                </p>
+                <p class="content2">₦550,000</p>
+                <del>₦600,000</del>
+            </div>
+            <div class="col10">
+                <p class="fix">-18%</p>
+                <img class="ident" src="ASSET/IMAGES/app3.webp" alt="">
+                <p class="content2">
+                    Apple iPhone 12 Pro - 6.1" - 128GB ROM - 6GB RAM- iOs 
+                </p>
+                <p class="content2">₦469,999</p>
+                <del>₦520,999</del>
+            </div>
+            <div class="col10">
+                <p class="fix">-50%</p>
+                <img class="ident" src="ASSET/IMAGES/iphoone2.webp" alt="">
+                <p class="content2">
+                    Apple iPhone 11 - 64GB + 4GB RAM - Nano Sim - 3110mAh
+                </p>
+                <p class="content2">₦275,997</p>
+                <del>₦375,000</del>
+            </div>
+            <div class="col10">
+                <p class="fix">-20%</p>
+                <img class="ident" src="ASSET/IMAGES/saved3.webp" alt="">
+                <p class="content2">
+                    Apple iPhone 12 Pro Max - 128GB ROM - 6GB RAM 
+                </p>
+                <p class="content2">₦545,000</p>
+                <del>₦645,000</del>
+            </div>
+            <div class="col10">
+                <p class="fix">-38%</p>
+                <img class="ident" src="ASSET/IMAGES/promax.webp" alt="">
+                <p class="content2">
+                    Apple iPhone 13 Pro Max - iOS 15 - 6.7" - 128GB ROM - 6GB
+                </p>
+                <p class="content2">₦760,000</p>
+                <del># 800,000</del>
+            </div>
+            <div class="col10">
+                <p class="fix">-20%</p>
+                <img class="ident" src="ASSET/IMAGES/cloud.webp" alt="">
+                <p class="content2">
+                    Apple Phone 11 Pro Max - 4GB RAM-256GB ROM - iOS
+                </p>
+                <p class="content2">₦480,000</p>
+                <del>#500,000</del>
+            </div>
+            <div class="col10">
+                <p class="fix">-20%</p>
+                <img class="ident" src="ASSET/IMAGES/aalock.webp" alt="">
+                <p class="content2">
+                    Apple iPhone 14 Plus 5G - 6.7"OLED - 128GB
+                </p>
+                <p class="content2">₦760,000</p>
+                <del>#800,600</del>
+            </div>
+        </div>
+        <div class="best-sellings">
+            <a class="best" href="apple.html">Best Phones</a>
+        </div>
+        </div>
+        <div class="row-col7">
+            <div class="col5">
+                <img class="ident" src="ASSET/IMAGES/samso.webp" alt="">
+                <p class="p">Samsung Galaxy A14 </p>
+            </div>
+            <div class="col5">
+                <img class="ident" src="ASSET/IMAGES/fold.webp" alt="">
+                <p class="p">Samsung Galaxy Z Fold4</p>
+            </div>
+            <div class="col5">
+                <a href="samsung.html">
+                    <img class="ident" src="ASSET/IMAGES/samsong.webp" alt="">
+                    <p class="p">Samsung Galaxy S23 Ultra</p>
+                </a>
+            </div>
+            <div class="col5">
+                <img class="ident" src="ASSET/IMAGES/google.webp" alt="">
+                <p class="p"> Google Pixel 7 Pro</p>
+            </div>
+            <div class="col5">
+                <img class="ident" src="ASSET/IMAGES/note.webp" alt="">
+                <p class="p">Samsung Galaxy Note 10</p>
+            </div>
+            <div class="col5">
+                <img class="ident" src="ASSET/IMAGES/ultra.jpg" alt="">
+                <p class="p">Samsung Galaxy S20 Ultra</p>
+            </div>
+            <div class="col5">
+                <img class="ident" src="ASSET/IMAGES/ultra2.jpg" alt="">
+                <p class="p">Samsung Galaxy A13 </p>
+            </div>
+        </div>
+        <div class="row8">
+            <div class="col8">
+                <p class="fix">-20%</p>
+                <img class="ident" src="ASSET/IMAGES/phone2.jpg" alt="">
+                <p class="content3">
+                    Samsung Galaxy A03 Core, 6.5", 32GB ROM 4GB/128GB Memory
+                </p>
+                <p class="content3">₦ 53,379</p>
+                <del># 65,900</del>
+    
+            </div>
+            <div class="col8">
+                <p class="fix">-20%</p>
+                <img class="ident" src="ASSET/IMAGES/lack2.webp" alt="">
+                <p class="content3">
+                    Samsung Galaxy S23 Ultra 5G - 6.8"Amoled - 512GB
+                </p>
+                <p class="content3">#909,999</p>
+                <del>₦1,000,999</del>
+            </div>
+            <div class="col8">
+                <p class="fix">-25%</p>
+                <img class="ident" src="ASSET/IMAGES/phone4.jpg" alt="">
+                <p class="content3">Samsung Galaxy A04s, 4GB/128GB Memory - Black</p>
+                <p class="content3">₦ 109,700</p>
+                <del># 129,500</del>
+            </div>
+            <div class="col8">
+                <p class="fix">-28%</p>
+                <img class="ident" src="ASSET/IMAGES/note.webp" alt="">
+                <p class="content3">
+                    Samsung Galaxy Note 10 - 6.3" - 8gb Ram - 256gb Rom
+                </p>
+                <p class="content3">₦239,999</p>
+                <del># 300,000</del>
+            </div>
+            <div class="col8">
+                <p class="fix">-20%</p>
+                <img class="ident" src="ASSET/IMAGES/samsong.webp" alt="">
+                <p class="content3">
+                    Samsung Galaxy S23 Ultra 5g - 6.8" Amoled- 512GB
+                </p>
+                <p class="content3">
+                    ₦1,00,000
+                </p>
+                <del>₦1,500,000 </del>
+            </div>
+            <div class="col8">
+              <a href="fold.html">
+                <p class="fix">-20%</p>
+                <img class="ident" src="ASSET/IMAGES/fold.webp" alt="">
+                <p class="content3">
+                    Samsung Galaxy Z Fold4 - 7.6" - 256GB ROM - 12GB RAM - 5G
+                </p>
+                <p class="content3">₦980,000</p>
+                <del>₦1,020,000</del>
+              </a>
+            </div>
+            <div class="col8">
+                <p class="fix">-30%</p>
+                <img class="ident" src="ASSET/IMAGES/lines.webp" alt="">
+                <p class="content3">
+                    Samsung Galaxy S23 Ultra 5g - 6.8" Amoled- 256GB
+                </p>
+                <p class="content3">₦925,000</p>
+                <del>₦100,000,000</del>
+            </div>
+        </div>
+        <div class="best-selling">
+            <a class="best" href="apple.html">Flash Sells</a>
+        </div>
+        <div class="row-col">
+            <div class="col5">
+                <img class="ident" src="ASSET/IMAGES/infinix1.jpg" alt="">
+                <p class="p">
+                    Infinix Smart 7 Plus
+                </p>
+            </div>
+            <div class="col5">
+                <img class="ident" src="ASSET/IMAGES/infinix6.jpg" alt="">
+                <p class="p">Infinix Hot 12 Play</p>
+            </div>
+            <div class="col5">
+                <img class="ident" src="ASSET/IMAGES/infinix7.jpg" alt="">
+                <p class="p">Infinix Smart 6 Plus </p>
+            </div>
+            <div class="col5">
+                <img class="ident" src="ASSET/IMAGES/infinix5.jpg" alt="">
+                <p class="p">Infinix Hot 12</p>
+            </div>
+            <div class="col5">
+                <img class="ident" src="ASSET/IMAGES/infinix10.jpg" alt="">
+                <p class="p">Infinix Hot 12</p>
+            </div>
+            <div class="col5">
+                <img class="ident" src="ASSET/IMAGES/infinix8.jpg" alt="">
+                <p class="p">Infinix Hot 11 X689f dual</p>
+            </div>
+            <div class="col5">
+                <img class="ident" src="ASSET/IMAGES/infinix9.jpg" alt="">
+                <p class="p">Infinix Note 11</p>
+            </div>
+           
+        </div>
+    
+    
+        <div class="row-col2">
+            <div class="col6">
+                <p class="fix">-18%</p>
+                <img class="ident" src="ASSET/IMAGES/pro1.jpg" alt="">
+                <p class="content3">
+                    Infinix Note 10 Pro 8GB RAM+256GB
+                </p>
+                <p class="content3">₦165,000</p>
+                <del class="deli">₦170,000</del>
+            </div>
+            <div class="col6">
+                <p class="fix">-20%</p>
+                <img class="ident" src="ASSET/IMAGES/pro2.jpg" alt="">
+                <p class="content3">
+                    Infinix Zero X (X6811B) 
+                </p>
+                <p class="content3">₦195,987</p>
+                <del class="deli">₦220,222</del>
+            </div>
+            <div class="col6">
+                <p class="fix">-68%</p>
+                <img class="ident" src="ASSET/IMAGES/pro3.jpg" alt="">
+                <p class="content3">
+                    Infinix Smart 6 Plus (X6511G)
+                </p>
+                <p class="content3">₦67,000</p>
+                <del class="deli">₦250,000</del>
+            </div>
+            <div class="col6">
+                <p class="fix">-18%</p>
+                <img class="ident" src="ASSET/IMAGES/pro4.jpg" alt="">
+                <p class="content3">
+                    Infinix Note 12 VIP (256GB ROM,8+5GB)
+                </p>
+                <p class="content3">₦300,000</p>
+                <del class="deli">₦350,000</del>
+            </div>
+            <div class="col6">
+                <p class="fix">-75%</p>
+                <img class="ident" src="ASSET/IMAGES/pro5.jpg" alt="">
+                <p class="content3">
+                    Infinix Smart 7 HD 6.6"HD+, 2+2GB RAM
+                </p>
+                <p class="content3">₦63,000</p>
+                <del class="deli">₦250,000</del>
+            </div>
+            <div class="col6">
+                <p class="fix">-18%</p>
+                <img class="ident" src="ASSET/IMAGES/pro6.jpg" alt="">
+                <p class="content3">
+                    Infinix SMART6,3G, 6.6,Android10,32GB
+                </p>
+                <p class="content3">₦61,699</p>
+                <del class="deli">₦72,000</del>
+            </div>
+            <div class="col6">
+                <p class="fix">-18%</p>
+                <img class="ident" src="ASSET/IMAGES/pro7.jpg" alt="">
+                <p class="content3">
+                    Infinix Zero X (X6811B) 6.67"
+                </p>
+                <p class="content3">₦195,987</p>
+                <del class="deli">₦230,444</del>
+            </div>
+        </div>
+        <div class="best-selling">
+            <a class="best" href="apple.html">Top selling Items</a>
+        </div>
+        <div class="row-col">
+            <div class="col5">
+                <img class="ident" src="ASSET/IMAGES/tech1.jpg" alt="">
+                <p class="p">Tecno Spark 9 Pro</p>
+            </div>
+            <div class="col5">
+                <img class="ident" src="ASSET/IMAGES/tech2.jpg" alt="">
+                <p class="p">Tecno Spark 9 Pro</p>
+            </div>
+            <div class="col5">
+                <img class="ident" src="ASSET/IMAGES/tech3.jpg" alt="">
+                <p class="p">Tecno Camon 18 Premier</p>
+            </div>
+            <div class="col5">
+                <img class="ident" src="ASSET/IMAGES/tech4.jpg" alt="">
+                <p class="p">Tecno Pop 7 Pro</p>
+            </div>
+            <div class="col5">
+                <img class="ident" src="ASSET/IMAGES/tech5.jpg" alt="">
+                <p class="p">Tecno Spark 10 </p>
+            </div>
+            <div class="col5">
+                <img class="ident" src="ASSET/IMAGES/tech6.jpg" alt="">
+                <p class="p">Tecno Camon 19 Pro</p>
+            </div>
+            <div class="col5">
+                <img class="ident" src="ASSET/IMAGES/tech7.jpg" alt="">
+                <p class="p">Tecno Spark 9 Pro</p>
+            </div>
+        </div>
+        <div class="row-col2">
+            <div class="col6">
+                <p class="fix">-50%</p>
+                <img class="ident" src="ASSET/IMAGES/pow2.jpg" alt="">
+                <p class="content3">
+                    Tecno Spark 10C (KI5k) 6.6", 128GB 
+               </p>
+                <p class="content3">₦184,990</p>
+                <del class="deli">₦170,000</del>
+            </div>
+            <div class="col6">
+                <p class="fix">-25%</p>
+                <img class="ident" src="ASSET/IMAGES/pow4.jpg" alt="">
+                <p class="content3">
+                    Tecno POP 7-BF6-6.6"-2/64GB ROM 
+                </p>
+                <p class="content3">₦56,800</p>
+                <del class="deli"> #76,000</del>
+            </div>
+            <div class="col6">
+                <p class="fix">-18%</p>
+                <img class="ident" src="ASSET/IMAGES/pow6.jpg" alt="">
+                <p class="content3">
+                   Tecno Phantom X, 6.7" (8GB + 256GB) 
+                </p>
+                <p class="content3">₦208,640</p>
+                <del class="deli">₦225,000</del>
+            </div>
+            <div class="col6">
+                <p class="fix">-18%</p>
+                <img class="ident" src="ASSET/IMAGES/pow7.jpg" alt="">
+                <p class="content3">
+                    Tecno Spark 9 Pro - 6.6" FHD 128GB ROM
+                </p>
+                <p class="content3">₦109,000</p>
+                <del class="deli">₦133,030</del>
+            </div>
+            <div class="col6">
+                <p class="fix">-20%</p>
+                <img class="ident" src="ASSET/IMAGES/pow8.jpg" alt="">
+                <p class="content3">
+                    Tecno Spark 9 Pro - 6.6"fhd+ - 128GB
+                </p>
+                <p class="content3">₦108,000</p>
+                <del class="deli">₦₦133,030</del>
+            </div>
+            <div class="col6">
+                <p class="fix">-77%</p>
+                <img class="ident" src="ASSET/IMAGES/pow5.jpg" alt="">
+                <p class="content3">
+                    Tecno Pop 7 2GB RAM + 64GB ROM
+                </p>
+                <p class="content3">₦56,800</p>
+                <del class="deli">₦250,000</del>
+            </div>
+            <div class="col6">
+                <p class="fix">-20%</p>
+                <img class="ident" src="ASSET/IMAGES/pow9.jpg" alt="">
+                <p class="content3">
+                    Tecno POP 5 Pro (BD4h) 6.52" HD
+                </p>
+                <p class="content3">₦63,990</p>
+                <del class="deli">₦80,000</del>
+            </div>
+        </div>
+        
+        <div class="best-selling">
+            <a class="best" href="./computer.html">Computer Accessories</a>
+        </div>
+        <div class="row-col">
+            <div class="col5">
+                <img class="ident" src="ASSET/IMAGES/apple10.jpg" alt="">
+                <p class="p">Apple Mac Book</p>
+            </div>
+            <div class="col5">
+                <img class="ident" src="ASSET/IMAGES/hp-img.jpg" alt="">
+                <p class="p">HP Stream Pro</p>
+            </div>
+            <div class="col5">
+                <img class="ident" src="ASSET/IMAGES/intel-pro.jpg" alt="">
+                <p class="p">Dell Inspiron 14</p>
+            </div>
+            <div class="col5">
+                <img class="ident" src="ASSET/IMAGES/novo2.jpg" alt="">
+                <p class="p">Lenovo Ideapad</p>
+            </div>
+            <div class="col5">
+                <img class="ident" src="ASSET/IMAGES/asusu.jpg" alt="">
+                <p class="p">Asus Notebook Intel</p>
+            </div>
+            <div class="col5">
+                <img class="ident" src="ASSET/IMAGES/asusu2.jpg" alt="">
+                <p class="p">Samsung S8 Plus</p>
+            </div>
+            <div class="col5">
+                <img class="ident" src="ASSET/IMAGES/asusu3.jpg" alt="">
+                <p class="p">
+                    itel 14” (HD) Intel Celeron</p>
+            </div>
+        </div>
+        <div class="row8">
+        <div class="col8">
+            <p class="fix">-20%</p>
+            <img class="ident" src="ASSET/IMAGES/hp5.jpg" alt="">
+            <p class="content3">
+                Hp 15 Intel Pentium Gold 8GB RAM 1TB HDD Windows 10 
+            </p>
+            <p class="content3">₦269,000</p>
+            <del class="deli">#290,000</del>
+        </div>
+        <div class="col8">
+            <p class="fix">-15%</p>
+            <img class="ident" src="ASSET/IMAGES/hp4.jpg" alt="">
+            <p class="content3">
+                Lenovo Ideapad Intel Celeron 1TB HDD 4GB RAM Win 10 PRO
+            </p>
+            <p class="content3">₦158,070</p>
+            <del class="deli"> #176,000</del>
+        </div>
+        <div class="col8">
+            <p class="fix">-28%</p>
+            <img class="ident" src="ASSET/IMAGES/hp6.jpg" alt="">
+            <p class="content3">
+                DELL Latitude 13 5320 Laptop11th Gen Core I7 512gb Ssd - 16gb
+            </p>
+            <p class="content3">₦239,999</p>
+            <del>#300,000</del>
+        </div>
+        <div class="col8">
+            <p class="fix">-20%</p>
+            <img class="ident" src="ASSET/IMAGES/hp7.jpg" alt="">
+            <p class="content3">
+                DELL Latitude 3420-14" Intel Core RAM-256GB SSD-Black
+            </p>
+            <p class="content3">
+                ₦1,00,000
+            </p>
+            <del>₦1,500,000 </del>
+        </div>
+        <div class="col8">
+            <p class="fix">-20%</p>
+            <img style="margin-top: 30px;" class="ident" src="ASSET/IMAGES/hp8.jpg" alt="">
+            <p class="content3">
+                Laptop Samsung - Galaxy Book  Alpha Touch-Screen Intel
+            </p>
+            <p class="content3">₦380,000</p>
+            <del>₦420,000</del>
+        </div>
+        <div class="col8">
+            <p class="fix">-30%</p>
+            <img class="ident" src="ASSET/IMAGES/hp9.jpg" alt="">
+            <p class="content3">
+                Green Ultra-slim Case 2.0mm For Macbook Pro 14"
+            </p>
+            <p class="content3">₦512,000</p>
+            <del>₦600,000</del>
+        </div>
+        <div class="col8">
+            <p class="fix">-30%</p>
+            <img class="ident" src="ASSET/IMAGES/hp10.jpg" alt="">
+            <p class="content3">
+               DELL Pavilion 14 - Intel Core RAM-Windows 11+USB 
+            </p>
+            <p class="content3">₦925,000</p>
+            <del>₦100,000,000</del>
+        </div>
+        </div>
+    
+        <section>
+            <div class="web">
+                <div class="describe">
+                    <h1 class="new2">Ausmobile Nigeria - Biggest Online Shopping Website</h1>
+                    <h1 class="new2">Shop Now for mobile phones And Laptop Online</h1>
+                </div>
+                <div class="lock">
+                    <p class="detail">
+                        Today, we all use online shopping sites because it's convenient to be able to purchase any item, including electronics and mobile devices, without leaving our current location. Even better is when you can purchase every item you require from the same retailer. Asap Nigeria is one of the greatest online shopping sites in Nigeria because of what it provides.
+                    </p>
+                    <h1 class="new2">Order Electronics & Appliances Here</h1>
+                    <p class="detail">
+                        The biggest technological event of the year, Asap Tech Week, is here! Ausmobile is offering fantastic discounts on the newest phone accessories and devices from March 20 to April 2 in 2023. We have what you need whether you're looking for a new laptop or smartphone.
+                    </p>
+                    <h1 class="new2">Discover the Online Shopping World</h1>
+                    <p class="detail">
+                        All year long, Ausmobile Nigeria creates campaigns, offers sales, discounts, and flash sales for the pleasure and delight of its clients. Before anybody else, our newsletter subscribers and fans learn about all of our specials, including Mobile & Tech Week. Additionally, we have a committed team that will assist you in placing orders. Asap Nigeria pledges to give you the best support and only genuine goods. We strive to get your item to you as quickly as possible, provide safe and secure payment options, and offer free returns. For more information, see our refund and return policy. Keep checking back to receive the lowest prices on all of your favorite products throughout the entire year in Nigeria.
+                    </p>
+                    <h1 class="new2">What are the payment methods available on AUSMOBILE?</h1>
+                    <ul >
+                        <li class="li4">Mastercard</li>
+                        <li class="li4">Verve</li>
+                        <li class="li4">Visa</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    
+        <div class="career">
+            <div class="zaa">
+                <img class="asap"  src="ASSET/IMAGES/WhatsApp_Image_2023-05-04_at_06.08.37-removebg-preview.png" alt="">
+            </div>
+            <div class="zaa2">
+                <h2 style="color: #fff;">NEW TO AUSMOBILE?</h2>
+                <p class="news">
+                    Subscribe to our newsletter to get updates on our latest offers!
+                </p>
+                <div>
+                    <input class="log" type="text" placeholder="Enter Your Email">
+                    <button class="btn3">Male</button>
+                    <button class="btn3">Female</button>
+                </div>
+            </div>
+            <div class="download">
+                <label style="color: #fff;" for="">DOWNLOAD AUSMOBILE FREE APP</label><br>
+                <label style="color: #fff;" for="">Get access to exclusive offers!</label><br>
+                <button class="btcn">
+                    <img class="apple" src="ASSET/IMAGES/Apple-Logo.png" alt="">
+                    Download on the<br>
+                    <span>Apple Store</span>
+                </button>
+                <button class="btcn">
+                    <img class="apple2" src="ASSET/IMAGES/play.png" alt="">
+                    Download on the<br>
+                    <span style="margin-left: 20px;">Apple Store</span>
+                </button>
+            </div>
+        </div>
+    
+        <div class="footer-carrier">
+            <div class="footer">
+                <div class="about">
+                    <h2 class="h2">ABOUT AUSMOBILE</h2>
+                    <ul class="pin">
+                        <li>
+                            <a class="hyper" href="about.html">About US</a>
+                        </li>
+                        <li>
+                            <a  class="hyper" href="help.html">Contact Us</a>
+                        </li>
+                        <li>
+                            <a class="hyper" href="term.html">Terms & Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="payment">
+                    <h2 class="h2">QUICKLINKS</h2>
+                    <ul class="pin">
+                        <li>
+                            <a class="hyper" href="./apple.html">Top Official</a>
+                        </li>
+                        <li>
+                            <a class="hyper" href="./ph.html">Smartphones</a>
+                        </li>
+                        <li>
+                            <a class="hyper" href="./index.html">Others</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="buying">
+                    <h2 class="h2">BUYING ON AUSMOBILE</h2>
+                    <ul class="pin">
+                        <li>
+                            <a class="hyper" href="#">Buyer Safty Center</a>
+                        </li>
+                        <li>
+                            <a class="hyper" href="./question.html">FAQs</a>
+                        </li>
+                        <li>
+                            <a class="hyper" class="hyper" href="delivery.html">Delivery</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="more-info">
+                    <h2 class="h2">MORE INFO</h2>
+                    <ul class="pin">
+                        <li>
+                            <a class="hyper" href="./track.html">Track Order</a>
+                        </li>
+                        <li>
+                            <a class="hyper" href="order.html">Order</a>
+                        </li>
+                        <li>
+                            <a class="hyper" href="./privacy.html">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="connect">
+                <h2 class="h2">CONNECT WITH US</h2>
+                        <a class="linking" href="https://www.facebook.com">
+                            <i style="color: #fff; font-size: 20px;" class='fab fa-facebook-f'></i>
+                        </a>
+                        <a class="linking" href="https://www.google.com/gmail">
+                            <i style="color: #fff; font-size: 20px;" class="fa fa-envelope" aria-hidden="true"></i>
+                        </a>
+                        <a class="linking"  href="https://www.instagram.com">
+                            <i style="color: #fff; font-size: 20px;" class='fa fa-instagram'></i>
+                        </a>
+            </div>
+        </div>
+        <div class="rightup">
+            <div class="line-up"></div>
+            <div>
+                <p class="copy5">&#169; 2023 Ausmobilestore.All rights reserved</p>
+            </div>
+            <div class="line-up"></div>
+        </div>
+        </div>
+        
+           <header class="header-con4">
+                    <div class="row">
+                        <div class="label-con">
+                            <label class="label"></label>
+                           <!-- <img class="logo" src="ham123-removebg-preview.png" alt=""> -->
+                        <i style="color: #fff; margin-top: 5px;" class="fa fa-bars"></i>
+                        </div>
+                        <div class="col">
+                            <a href="./index.html">Home</a> 
+                            <a href="./computer.html">Computing</a>
+                            <a href="./ph.html">Smartphones</a>
+                            <a href="apple.html">Apple Phones</a>
+                            <a href="./apple.html">Top Official</a>
+                            <a href="./index.html">Best Selling</a>
+                            <a href="./index.html">Other Categories</a>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="linker" href="contact.html">Contact US</a>
+                    </div>
+                    <div>
+                        <a class="linker" href="#">Payment</a>
+                    </div>
+                    <div>
+                        <a class="linker" href="cart.html">
+                            <i class="fas fa-shopping-cart">cart</i>
+                        </a>
+                    </div>
+                    <div>
+                        <a class="linker" href="index.html">
+                                <a href="index.html">
+                                    <i style="font-size: 30px; margin-right: 30px; color: #fff;" class="fa fa-home" aria-hidden="true"></i>
+                                </a>
+                        </a>
+                    </div>
+               
+                </header>
+                <button class="whatsapp-link"> 
+                <a href="https://api.whatsapp.com/send?phone=
+                +2347059051442&text=Hello We are here to help u!!">
+                <i class="fa fa-whatsapp button"></i>
+                </a>
+                </button>
+
+                <button class="repeat" id="repeat">
+                    <a href="#">
+                        <i class='fas fa-angle-double-up' style='font-size:38px;color:rgba(26, 115, 150, 0.89)'></i>
+                    </a>
+                </button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <script>
+
+                        let mybutton = document.getElementById("repeat");
+
+                        // When the user scrolls down 20px from the top of the document, show the button
+                        window.onscroll = function() {scrollFunction()};
+
+                        function scrollFunction() {
+                        if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+                            mybutton.style.display = "block";
+                        } else {
+                            mybutton.style.display = "none";
+                        }
+                        }
+
+
+                </script>
+               
+</body>
+</html>

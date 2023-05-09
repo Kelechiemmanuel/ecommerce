@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="ASSET/IMAGES/WhatsApp_Image_2023-04-20_at_12.31.10-removebg-preview.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>  
+    <title>payment</title>
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800;900&display=swap');
+                        .search{
+                position: fixed;
+                background-color: lavender;
+                z-index: 60;
+                width: 100%;
+                height: 100px;
+                right: 0;
+                left: 0;
+                top: 0;
+            }
+            *{
+                scroll-behavior: smooth;
+                font-family: poppins;
+            }
+            body{
+                margin: 0;
+            }
+
+            .img25{
+                width: 70px;
+            }
+            .logo-con{
+                margin-top: 10px;
+            }
+                .container{
+                display: inline-block;
+                position: relative;
+                background-color: whitesmoke;
+            }
+            .container:hover .content{
+                display: block;
+            }
+            .btn{
+                color: black;
+                background-color: transparent;
+                border: none;
+                height: 40px;
+            }
+            .content{
+                position: absolute;
+                width: 200px;
+                margin-left: -50px;
+                height: 110px;
+                margin-top: 1px;
+                border-radius: 5px 5px 5px 5px;
+                background-color: white;
+                display: none;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                overflow: auto;
+            }
+            .content a{
+                display: block;
+                text-align: center;
+                padding: 5px;
+                color: black;
+                text-decoration: none;
+            }
+            .content a:hover{
+            color: #ffff;
+            background-color: #00203fff;
+
+            }
+            .logo{
+                width: 40px;
+            }
+            .box{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: lavender;
+               padding-left: 40px;
+               padding-right: 40px;
+            }
+
+            .input{
+                width: 90%;
+                height: 35px;
+                border: 1px solid transparent;
+                padding-left: 13px;
+                border-radius: 5px 0 0  5px;  
+                outline: none;
+            }
+            .input2{
+                width: 90px;
+                text-align: center;
+                height: 40px;
+                color: white;
+                border: none;
+                font-size: 15px;
+                border-radius: 3px;
+                background-color: #00203fff;
+            }
+            .input2:hover{
+                opacity: 0.5;
+            }
+            .form{
+                display: flex;
+                border: 1px solid  #00203fff;
+                background-color: rgb(175, 196, 199);
+                padding-right: 10px;
+                justify-content: space-between;
+                width: 50%;
+                border-radius: 5px;
+            }
+            .gloo{
+                text-indent: -999px;
+                overflow: hidden;
+                color: #00203fff;
+                margin: 0;
+                border-radius: 5px;
+                background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+                border: 5px solid transparent;
+            }
+            .row{
+                display: inline-block;
+                position: relative;
+            }
+            .col{
+                position: absolute;
+                width: 500px;
+                display: none;
+                left: -50px;
+                height: 50vh;
+                background-color: white;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                overflow: auto;
+            }
+            .row:hover .col{
+                display: block;
+            }
+            .col a{
+                display: block;
+                padding: 7px;
+                margin-left: 40px;
+                color: black;
+                text-decoration: none; 
+                transition: all 0.23s;
+            }
+            .col a:hover{
+                color: red;
+                transform: scaleY(2.1);
+            }
+            .space{
+                height: 20px;
+                width: 100%;
+                background-color: white;
+            }
+            .space2{
+                height: 30px;
+                width: 100%;
+                background-color: #00203fff;
+            }
+
+            h3{
+                text-align: center;
+                font-family: poppins;
+            }
+            i{
+                font-family: poppins;
+                font-size: 15px;
+            }
+            .btn2{
+                height: 40px;
+                width: 100px;
+                border-radius: 3px;
+                background-color: #00203fff;
+                border: none;
+            }
+            .btn2:hover{
+                opacity: 0.5;
+            }
+            .fix{
+                position: absolute;
+                color: white;
+                background-color: #00203fff;
+                padding-left: 4px;
+                padding-right: 4px;
+                padding-top: 4px;
+                padding-bottom: 4px;
+                border-radius: 2px;
+            }
+            a{
+                font-family: poppins;
+            }
+
+            .header-con{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                width: 100%;
+                height: 50px;
+                margin-top: 20px;
+               background-color: #00203fff;
+                margin-bottom: 10px;
+            }
+            .label-con{
+               display: flex;
+            }
+            .label{
+               margin-right: 8px;
+               font-family: poppins;
+               color: #ffff;
+            }
+            .all-linkerz{
+                display: flex;
+                justify-content: space-between;
+                margin-left: -150;
+            }
+            a{
+                font-family: poppins;
+            }
+            .btc{
+                background: none;
+                border: none;
+                font-family: poppins;
+                color: #ffff;
+                height: 50px;
+                width: 120px;
+            }
+            .btc:hover{
+                background: white;
+                color: gray;
+            }
+            .linker{
+                color: #ffff;
+                text-decoration: none;
+                height: 100px;
+                width: 120px;
+            }
+            .linker:hover{
+                color: gray;
+            }
+
+            @media screen and (max-width: 900px) {
+                .container{
+                    display: none;
+                }
+                .header-con{
+                    display: none;
+                }
+                .img25{
+                display: none;
+                }
+                .btn2{
+                    display: none;
+                }
+                .form{
+                    width: 80%;
+                    margin-right: 60px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+              
+
+            }
+            .logo2{
+                width: 70px;
+            }
+            .logo-menu{
+                margin-left: 10px;
+                margin-top: 25px;
+            }
+            .home-4{
+                color: #00203fff;
+            }
+            .chatz{
+                margin-right: 10px;
+            }
+            .label-con3{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                height: 50px;
+                /* background-color: whitesmoke; */
+                margin-bottom: 10px;
+            }
+            @media screen and (min-width: 900px) {
+                .label-con3{
+                    display: none;
+                }
+            }
+        
+        .input15{
+            width: 417px;
+            height: 40px;
+            margin: 5px;
+            border: 1px solid lightgray;
+            outline: none;
+        }
+        .input3{
+            width: 192px;
+            height: 40px;
+            border: 1px solid lightgray;
+            margin: 5px;
+            outline: none;
+        }
+        .donation{
+            width: 600px;
+            text-align: center;
+            height: 65vh;
+            border: 1px solid lightgrey;
+            padding-top: 20px;
+            background-color: whitesmoke;
+            display: block;
+            margin: 150px auto;
+            margin-bottom: 20px;
+        }
+        a{
+            text-decoration: none;
+        }
+      
+        .donation2{
+            display: flex;
+            justify-content: center;
+        }
+        .motto{
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        .euro{
+            height: 45px;
+            border: 1px solid lightgray;
+            outline: none;
+        }
+        .dollar{
+            height: 40px;
+            width: 330px;
+            border: 1px solid lightgray;
+            outline: none;
+        }
+        .dollar2{
+            height: 40px;
+            width: 195px;
+            margin-top: 10px;
+            border: 1px solid lightgray;
+            outline: none;
+        }
+        .pay{
+            margin-top: 10px;
+
+        }
+        .bmb{
+            height: 30px;
+            width: 100px;
+            border: none;
+            color: #fff;
+            border-radius: 3px;
+            background-color:  #00203fff;
+        }
+        .section2{
+            display: flex;
+            background-image: url(eko.jpg);
+            background-position: top;
+            margin-top: 50px;
+          }
+          .select{
+            background-color: #0c021ac7;
+            width: 100%;
+            justify-content: space-around;
+            display: flex;
+            height: 300px;
+          }
+          .flex{
+            text-align: left;
+          }
+          .flex2{
+            margin-left: -40px;
+          }
+          .flex3:hover{
+            text-decoration: underline;
+          }
+          .flex3{
+            color: #5cc8d7ff;
+          }
+          .log{
+            width: 300px;
+            color: #5cc8d7ff;
+          }
+          .log2{
+            color: #5cc8d7ff;
+          }
+          .qa{
+            color: white;
+          }
+ 
+      @media screen and (max-width: 500px) {
+        .space-con{
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #fff;
+        }
+        .space{
+            margin-top: 5px;
+            background-color: #00203fff;
+            width: 450px;
+            margin-left: 15px;
+            padding-left: 30px;
+        }
+        .dan{
+            width: 440px;
+            margin-bottom: 10px;
+            margin-left: 15px;
+        }
+        .space-con{
+            height: 39vh;
+            width: 450px;
+        }
+        .section2{
+            margin-top: 50px;
+            width: 100%;
+        }
+        .select{
+            display: flex;
+            flex-wrap: wrap;
+            height: 100vh;
+            width: 100%;
+        }
+        .log2{
+            width: 400px;
+        }
+        .donation2{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .input3{
+            width: 300px;
+        }
+        .input2{
+            width: 300px;
+        }
+        .dollar{
+            width: 216px;
+        }
+        .dollar2{
+            width: 140px;
+        }
+        .input15{
+            width: 300px;
+        }
+        
+        .lols{
+            text-align: center;
+            width: 480px;
+        }
+        .donation{
+            height: 90vh;
+            width: 100%;
+        }
+        .bmb{
+            margin-right: 100px;
+        }
+      }
+      .bill{
+        color: #00203fff;
+      }
+
+
+                  
+      .store{
+                width: 230px;
+                margin: 20px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                background-color: #fff;
+                border-radius: 5px;
+                text-align: center;
+                transition: all 0.23s;
+            }
+            .store:hover{
+                transform: scale(1.1);
+            }
+            .intro{
+                margin-left: 10px;
+                margin-right: 10px;
+                font-family: poppins;
+                font-size: 14px;
+            }
+            .compute-con{
+                display: flex;
+                flex-wrap: wrap;
+                height: 100%;
+                width: 100%;
+                justify-content: center;
+                background-color: whitesmoke;
+            }
+
+            .lap4{
+                width: 150px;
+                margin-top: 15px;
+            }
+            .a-z{
+                color: black;
+                text-decoration: none;
+            }
+            .add{
+                width: 180px;
+                height: 30px;
+                border-radius: 15px;
+                background-color: white;
+                border: 1px solid #00203fff;
+                color: #00203fff;
+                margin-bottom: 20px;
+            }
+            input{
+                padding-left: 20px;
+            }
+            .add:hover{
+                background-color: #00203fff;
+                transition: all 0.5s;
+                color: white;
+            }
+            .li{
+                color: #00203fff;
+            }
+
+            .web{
+                width: 100%;
+                height: 100%;
+                padding-top: 20px;
+                margin-top: 30px;
+                background-color: whitesmoke;
+            }
+            .lock{
+                width: 80%;
+                height: 50%;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: white;
+                padding-top: 20px;
+                padding-bottom: 10px;
+                margin-top: -50px;
+            }
+            .describe{
+                text-align: center;
+                width: 80%;
+                padding-top: 20px;
+                height: 20%;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: white;
+            }
+            .detail{
+                padding-left: 30px;
+                padding-right: 20px;
+                font-family: poppins;
+                font-size: 16px;
+                opacity: 0.8;
+            }
+            @media screen and (max-width: 500px) {
+                .compute-con{
+                    width: 100%;
+                    height: 100%;
+                }
+                .home{
+                    margin-top: 25px;
+                }
+                .carousel-indicators {
+                    display: none;
+
+                }
+            }
+            .asap{
+            width: 100px;
+            margin-top: 40px;
+            }
+            .asap2{
+                width: 50px;
+            }
+            h2{
+                font-size: poppins;
+            }
+            .career{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: center;
+                background-color: rgb(51, 47, 47);
+                width: 100%;
+                height: 100%;
+                padding-bottom: 30px;
+            }
+            .apple{
+                width: 40px;
+                color: #fff;
+            }
+            .apple2{
+                width: 23px;
+            }
+            .log{
+
+                width: 250px;
+                height: 40px;
+                padding-left: 20px;
+                margin-top: -15px;
+                outline: #5cc8d7ff;
+                border-radius: 3px;
+                border: none;
+            }
+            .news{
+                margin-top: -20px;
+                color: #fff;
+                font-family: poppins;
+            }
+            .btnc{
+                text-align: center;
+            }
+            .btn3{
+                width: 100px;
+                height: 45px;
+                border: 2px solid #00203fff;
+                border-radius: 3px;
+                color: #fff;
+                background: none;
+            }
+            .btn3:hover{
+                color: #5cc8d7ff;
+                border: 2px solid #5cc8d7ff;
+            }
+
+            @media screen and (max-width: 500px) {
+                .zaa{
+                    margin-top: 30px;
+                }
+                .zaa2{
+                    margin-left: 30px;
+                }
+                .log{
+                    width: 80%;
+                    margin-bottom: 10px;
+                }
+            }
+
+            .footer{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+            }
+            .footer-carrier{
+                width: 100%;
+                height: 100%;
+                background-color: rgba(37, 35, 35, 0.856);
+                /* background-color:  #0c0c0c; */
+                
+            }
+            .pin{
+                margin-left: -40px;
+            }
+            li{
+                list-style: none;
+            }
+            .hyper{
+                color: lightgray;
+                font-size: poppins;
+                text-decoration: none;
+                font-size: 13px;
+            }
+            .hyper:hover{
+                color: #fff;
+                text-decoration: underline;
+            }
+            .about{
+                margin-left: 40px;
+            }
+            .br{
+               background: none;
+               border: none;
+            }
+            .more-info{
+                margin-right: 40px;
+            }
+            @media screen and (max-width: 500px) {
+                .payment{
+                    margin-right: 60px;
+                }
+                .buying{
+                    margin-left: 40px;
+                }
+                .right{
+                    margin-bottom: 70px;
+                }
+                
+            }
+            .loo{
+                color: #5cc8d7ff;
+                font-family: poppins;
+                font-size: 17px;
+            }
+            .h2{
+                color: lightgray;
+            }
+
+            .connect{
+                text-align: center;
+                padding-bottom: 40px;
+            }
+            .ul-con{
+                display: flex;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .linking{
+                margin: 10px;
+                height: 50px;
+            }
+            .right{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color:  #0c0c0c;;
+                width: 100%;
+            }
+            .line-up{
+                width: 35%;
+                height: 2px;
+                background-color: lightgray;
+            }
+            .copy5{
+                color: #fff;
+            }
+
+            .header-con4{
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 100%;
+                height: 50px;
+                position: fixed;
+                z-index: 100;
+                margin-top: 20px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin-top: 20px;
+               background-color:  #0c0c0c;
+            }
+            @media screen and (min-width: 900px) {
+                .header-con4{
+                    display: none;
+                }
+            }
+            @media screen and (max-width: 500px) {
+                .footer-carrier{
+                    display: none;
+                }
+                .col a:hover{
+                    color: red;
+                }
+                .col{
+                    position: absolute;
+                    bottom: 100%;
+                }
+                .logo{
+                    position: relative;
+                }
+                
+            }
+            a{
+                text-decoration: none;
+            }
+            .button{
+               color: #fff;
+            }
+    .whatsapp-link{
+        width: 60px;
+        height: 60px;
+        background-color: rgb(46, 182, 46);
+        border: none;
+        border-radius: 50%;
+        position: fixed;
+        z-index: 100;
+        font-size: 40px;
+        height: 60px;
+        width: 60px;
+        right: 10px;
+        transition: 0.5s;
+        bottom: 150px;
+    }
+    
+    .whatsapp-link:hover{
+        transform: scale(1.1);
+    }
+
+            .repeat{
+        border: none;
+        position: fixed;
+        right: 20px;
+        z-index: 100;
+        bottom: 40px;
+        background: none;
+        animation: bounce 0.5s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+
+    }
+    @keyframes bounce {
+            from {
+                transform: translate3d(0, 0, 0);
+            }
+            to {
+                transform: translate3d(0, 05px, 0);
+            }
+        }
+      
+    </style>
+</head>
+<body>
+    <section class="search">
+        <div class="label-con3">
+            <div class="logo-menu">
+                <img class="logo2" src="ASSET/IMAGES/WhatsApp_Image_2023-05-04_at_06.34.18-removebg-preview.png" alt="">
+            </div>
+            <div class="chatz">
+                <a class="home-4" href="cart.html">
+                    <i class="fas fa-shopping-cart">cart</i>
+                </a>
+            </div>
+            </div>
+            <div class="box">
+                <div class="logo-con">
+                    <img class="img25" src="ASSET/IMAGES/WhatsApp_Image_2023-05-04_at_06.34.18-removebg-preview.png" alt="">
+                </div>
+                <form class="form">
+                    <input class="input" type="text" placeholder="Search Product,Brand and Categories">
+                    <button class="gloo" type="search">Submit</button>
+                </form>
+                <div class="container">
+                    <button class="btn2">
+                        <i style="color: #ffff;" class='fas fa-user-alt'></i>
+                        <label style="color: #fff;" for="">Account</label>
+                    </button>
+                    <div class="content">
+                        <a href="account.html">Login/<br>
+                            Sign up</a> 
+                    </div>
+                </div> 
+                <div class="container">
+                    <button class="btn2">
+                        <i style="color: #fff;" class="fa fa-question-circle btm"></i>
+                        <label style="color: #fff;" for="">Help</label>
+                    </button>
+                    <div class="content">
+                        <a href="./help.html">Contact Us</a>
+                        <a href="./about.html">About Us</a>
+                        <a href="./question.html">FAQs</a>  
+                    </div>
+
+                </div> 
+                <button class="btn2">
+                    <i style="color: white;" class="fas fa-shopping-cart"></i>
+                        <label style="color: #fff;" for="">Cart</label>
+                </button>
+            </div>
+        <header class="header-con">
+            <div class="row">
+                <div class="label-con">
+                    <label class="label">All Categories</label>
+                <!-- <img class="logo" src="ham123-removebg-preview.png" alt=""> -->
+                <i style="color: #fff; margin-top: 5px;" class="fa fa-bars"></i>
+                </div>
+                <div class="col">
+                    <a href="./index.html">Home</a> 
+                    <a href="./computer.html">Computing</a>
+                    <a href="./ph.html">Smartphones</a>
+                    <a href="apple.html">Apple Phones</a>
+                    <a href="./apple.html">Top Official</a>
+                    <a href="./index.html">Best Selling</a>
+                    <a href="./index.html">Other Categories</a>
+                </div>
+            </div>
+
+
+                     
+            <div>
+                <a class="linker" href="./index.html">
+                    <button class="btc">Home</button>
+                </a>
+            </div>
+            <div>
+                <a class="linker" href="./apple.html">
+                    <button class="btc">Top Official</button>
+                </a>
+            </div>
+            <div>
+                <a class="linker" href="./apple.html">
+                    <button class="btc">Best selling</button>
+                </a>
+            </div>
+            <div>
+                <a class="linker" href="./ph.html">
+                    <button class="btc">smartphones</button>
+                </a>
+            </div>
+    
+            <div>
+                <a class="linker" href="./index.html">
+                    <button class="btc">Other Categories</button>
+                </a>
+            </div>
+          
+        
+        </header>
+    </section>
+ 
+    <div class="donation">
+        <div class="lols">
+            <h1 class="bill">INCLUDE YOUR ADDRESS</h1>
+        </div>
+        <div class="donation2">
+            <div>
+                <input class="input3" type="text" placeholder="Name" required>
+            </div>
+            <div>
+                <input class="input3" type="text" placeholder=" Enter city" required>
+            </div>
+        </div>
+        <div class="">
+            <input class="input15" type="text" placeholder="Email Address">
+        </div>
+        <div>
+            <input class="input15" type="text" placeholder="Address">
+        </div>
+        <select class="euro" name="" id="">
+            <option value="">State</option>
+            <option value="">Lagos</option>
+            <option value="">Enugu</option>
+            <option value="">Abuja</option>
+            <option value="">Anambra</option>
+            <option value="">P. hacourt</option>
+        </select>
+        <input class="dollar" type="text" placeholder="credit card number">
+        <input class="dollar2" type="text" placeholder="Card type">
+        <input class="dollar2" type="text" placeholder="CVV">
+        <div class="pay">
+            <button class="bmb">
+                <a class="qa" href="">Pay</a>
+            </button>
+        </div>
+    </div>
+
+    <div class="career">
+        <div class="zaa">
+            <img class="asap"  src="ASSET/IMAGES/WhatsApp_Image_2023-05-04_at_06.08.37-removebg-preview.png" alt="">
+        </div>
+        <div class="zaa2">
+            <h2 style="color: #fff;">NEW TO AUSMOBILE?</h2>
+            <p class="news">
+                Subscribe to our newsletter to get updates on our latest offers!
+            </p>
+            <div>
+                <input class="log" type="text" placeholder="Enter Your Email">
+                <button class="btn3">Male</button>
+                <button class="btn3">Female</button>
+            </div>
+        </div>
+        <div class="download">
+            <label style="color: #fff;" for="">DOWNLOAD AUSMOBILE FREE APP</label><br>
+            <label style="color: #fff;" for="">Get access to exclusive offers!</label><br>
+            <button class="btcn">
+                <img class="apple" src="ASSET/IMAGES/Apple-Logo.png" alt="">
+                Download on the<br>
+                <span>Apple Store</span>
+            </button>
+            <button class="btcn">
+                <img class="apple2" src="ASSET/IMAGES/play.png" alt="">
+                Download on the<br>
+                <span style="margin-left: 20px;">Apple Store</span>
+            </button>
+        </div>
+    </div>
+    <div class="footer-carrier">
+        <div class="footer">
+            <div class="about">
+                <h2 class="h2">ABOUT AUSMOBILE</h2>
+                <ul class="pin">
+                    <li>
+                        <a class="hyper" href="./about.html">About US</a>
+                    </li>
+                    <li>
+                        <a  class="hyper" href="./contact.html">Contact Us</a>
+                    </li>
+                    <li>
+                        <a class="hyper" href="./term.html">Terms & Conditions</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="payment">
+                <h2 class="h2">PAYMENT</h2>
+                <ul class="pin">
+                    <li>
+                        <a class="hyper" href="./apple.html">Top Official</a>
+                    </li>
+                    <li>
+                        <a class="hyper" href="./ph.html">Smartphones</a>
+                    </li>
+                    <li>
+                        <a class="hyper" href="./index.html">Others</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="buying">
+                <h2 class="h2">BUYING ON AUSMOBILE</h2>
+                <ul class="pin">
+                    <li>
+                        <a class="hyper" href="#">Buyer Safty Center</a>
+                    </li>
+                    <li>
+                        <a class="hyper" href="question.html">FAQs</a>
+                    </li>
+                    <li>
+                        <a class="hyper" class="hyper" href="delivery.html">Delivery</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="more-info">
+                <h2 class="h2">MORE INFO</h2>
+                <ul class="pin">
+                    <li>
+                        <a class="hyper" href="./track">Track Order</a>
+                    </li>
+                    <li>
+                        <a class="hyper" href="order.html">Order</a>
+                    </li>
+                    <li>
+                        <a class="hyper" href="./privacy.html">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="connect">
+            <h2 class="h2">CONNECT WITH US</h2>
+                    <a class="linking" href="https://www.facebook.com">
+                        <i style="color: #fff; font-size: 20px;" class='fab fa-facebook-f'></i>
+                    </a>
+                    <a class="linking" href="https://www.google.com/gmail">
+                        <i style="color: #fff; font-size: 20px;" class="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
+                    <a class="linking"  href="https://www.instagram.com">
+                        <i style="color: #fff; font-size: 20px;" class='fa fa-instagram'></i>
+                    </a>
+        </div>
+    </div>
+    <div class="right">
+        <div class="line-up"></div>
+        <div>
+            <p class="copy5">Copyright &#169; 2023 Ausmobilestore.All rights reserved</p>
+        </div>
+        <div class="line-up"></div>
+    </div>
+    </div>
+    
+       <header class="header-con4">
+                <div class="row">
+                    <div class="label-con">
+                        <label class="label"></label>
+                    <!-- <img class="logo" src="ham123-removebg-preview.png" alt=""> -->
+                    <i style="color: #fff; margin-top: 5px;" class="fa fa-bars"></i>
+                    </div>
+                    <div class="col">
+                        <a href="./index.html">Home</a> 
+                        <a href="./computer.html">Computing</a>
+                        <a href="./ph.html">Smartphones</a>
+                        <a href="apple.html">Apple Phones</a>
+                        <a href="./apple.html">Top Official</a>
+                        <a href="./index.html">Best Selling</a>
+                        <a href="./index.html">Other Categories</a>
+                    </div>
+                </div>
+                <div>
+                    <a class="linker" href="contact.html">Contact US</a>
+                </div>
+                <div>
+                    <a class="linker" href="#">Buyer Safty Center</a>
+                </div>
+                <div>
+                    <a class="linker" href="cart.html">
+                        <i class="fas fa-shopping-cart">cart</i>
+                    </a>
+                </div>
+                <div>
+                    <a class="linker" href="index.html">
+                            <a href="page.html">
+                                <i style="font-size: 30px; margin-right: 30px; color: #fff;" class="fa fa-home" aria-hidden="true"></i>
+                            </a>
+                    </a>
+                </div>
+            </header>
+
+            <button class="whatsapp-link"> 
+                <a href="https://api.whatsapp.com/send?phone=
+                +2347059051442&text=Hello We are here to help u!!">
+                <i class="fa fa-whatsapp button"></i>
+                </a>
+                </button>
+
+                
+                <button class="repeat" id="repeat">
+                    <a href="#">
+                        <i class='fas fa-angle-double-up' style='font-size:38px;color:rgba(26, 115, 150, 0.89)'></i>
+                    </a>
+                </button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <script>
+
+                        let mybutton = document.getElementById("repeat");
+                        window.onscroll = function() {scrollFunction()};
+
+                        function scrollFunction() {
+                        if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+                            mybutton.style.display = "block";
+                        } else {
+                            mybutton.style.display = "none";
+                        }
+                        }
+
+
+                </script>
+  
+
+</body>
+</html>

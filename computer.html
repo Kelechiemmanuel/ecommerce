@@ -1,0 +1,1513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="ASSET/IMAGES/WhatsApp_Image_2023-04-20_at_12.31.10-removebg-preview.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>                                   
+    <title>Computing Gadgets</title>
+    <style> 
+        
+            .search{
+                position: fixed;
+                background-color: lavender;
+                z-index: 60;
+                width: 100%;
+                height: 100px;
+                right: 0;
+                left: 0;
+                top: 0;
+            }
+            /* *{
+                margin: 0;
+            } */
+            .img25{
+                width: 70px;
+            }
+            .logo-con{
+                margin-top: 10px;
+            }
+                .container{
+                display: inline-block;
+                position: relative;
+                background-color: whitesmoke;
+            }
+            .container:hover .content{
+                display: block;
+            }
+            .btn{
+                color: black;
+                background-color: transparent;
+                border: none;
+                height: 40px;
+            }
+            .content{
+                position: absolute;
+                width: 200px;
+                margin-left: -50px;
+                height: 110px;
+                margin-top: 1px;
+                border-radius: 5px 5px 5px 5px;
+                background-color: white;
+                display: none;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                overflow: auto;
+            }
+            .content a{
+                display: block;
+                text-align: center;
+                padding: 5px;
+                color: black;
+                text-decoration: none;
+            }
+            .content a:hover{
+            color: #ffff;
+            background-color: #00203fff;
+
+            }
+            .logo{
+                width: 40px;
+            }
+            .box{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: lavender;
+               padding-left: 40px;
+               padding-right: 40px;
+            }
+
+            .input{
+                width: 90%;
+                height: 35px;
+                border: 1px solid transparent;
+                padding-left: 13px;
+                border-radius: 5px 0 0  5px;  
+                outline: none;
+            }
+            .input2{
+                width: 90px;
+                text-align: center;
+                height: 40px;
+                color: white;
+                border: none;
+                font-size: 15px;
+                border-radius: 3px;
+                background-color: #00203fff;
+            }
+            .input2:hover{
+                opacity: 0.5;
+            }
+            .form{
+                display: flex;
+                border: 1px solid  #00203fff;
+                background-color: rgb(175, 196, 199);
+                padding-right: 10px;
+                justify-content: space-between;
+                width: 50%;
+                border-radius: 5px;
+            }
+            .gloo{
+                text-indent: -999px;
+                overflow: hidden;
+                color: #00203fff;
+                margin: 0;
+                border-radius: 5px;
+                background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+                border: 5px solid transparent;
+            }
+            .row{
+                display: inline-block;
+                position: relative;
+            }
+            .col{
+                position: absolute;
+                width: 500px;
+                display: none;
+                left: -60px;
+                height: 50vh;
+                background-color: white;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                overflow: auto;
+            }
+            .row:hover .col{
+                display: block;
+            }
+            .col a{
+                display: block;
+                padding: 7px;
+                margin-left: 40px;
+                color: black;
+                text-decoration: none; 
+                transition: all 0.23s;
+            }
+            .col a:hover{
+            color: red;
+            transform: scaleY(2.1);
+            }
+            .space{
+                height: 20px;
+                width: 100%;
+                background-color: white;
+            }
+            .space2{
+                height: 30px;
+                width: 100%;
+                background-color: #00203fff;
+            }
+
+            h3{
+                text-align: center;
+                font-family: poppins;
+            }
+            i{
+                font-family: poppins;
+                font-size: 15px;
+            }
+            .btn2{
+                height: 40px;
+                width: 100px;
+                border-radius: 3px;
+                background-color: #00203fff;
+                border: none;
+            }
+            .btn2:hover{
+                opacity: 0.5;
+            }
+            .fix{
+                position: absolute;
+                color: white;
+                background-color: #00203fff;
+                padding-left: 4px;
+                padding-right: 4px;
+                padding-top: 4px;
+                padding-bottom: 4px;
+                border-radius: 2px;
+            }
+
+            .header-con{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                width: 100%;
+                height: 50px;
+                margin-top: 20px;
+               background-color: #00203fff;
+                margin-bottom: 10px;
+            }
+            .label-con{
+               display: flex;
+            }
+            .label{
+               margin-right: 8px;
+               font-family: poppins;
+               color: #ffff;
+            }
+            .all-linkerz{
+                display: flex;
+                justify-content: space-between;
+                margin-left: -150;
+            }
+            a{
+                font-family: poppins;
+            }
+            .btc{
+                background: none;
+                border: none;
+                font-family: poppins;
+                color: #ffff;
+                height: 50px;
+                width: 120px;
+            }
+            .btc:hover{
+                background: white;
+                color: gray;
+            }
+            .linker{
+                color: #ffff;
+                text-decoration: none;
+                height: 100px;
+                width: 120px;
+            }
+            .linker:hover{
+                color: gray;
+            }
+
+            @media screen and (max-width: 900px) {
+                .container{
+                    display: none;
+                }
+                .header-con{
+                    display: none;
+                }
+                .img25{
+                display: none;
+                }
+                .btn2{
+                    display: none;
+                }
+                .form{
+                    width: 80%;
+                    margin-right: 60px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+              
+
+            }
+            @media screen and (min-width: 900px) {
+                .home{
+                    margin-top: 30px;
+                }
+            }
+            .logo2{
+                width: 80px;
+            }
+            .logo-menu{
+                margin-left: 10px;
+                margin-top: 25px;
+            }
+            .home-4{
+                color: #00203fff;
+            }
+            .chatz{
+                margin-right: 10px;
+            }
+            .label-con3{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                height: 50px;
+                /* background-color: whitesmoke; */
+                margin-bottom: 10px;
+            }
+            @media screen and (min-width: 900px) {
+                .label-con3{
+                    display: none;
+                }
+            }
+            .home{
+                margin-top: 150px;
+            }
+
+            .home{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                margin-top: 128px;
+            }
+
+            .center{
+                height: 50vh;
+                width: 80%;
+            }
+
+            .pro-max2{
+                height: 60vh;
+                width: 99%;
+                margin: 0 5px 0 5px;
+                background-position: center;
+                background-size: calc(100% - (-10%));
+                background-repeat: no-repeat;
+                background-position: left;
+                background-image: url(ASSET/IMAGES/onye.jpg);
+            }
+            .pro-max{
+                height: 60vh;
+                width: 99%;
+                /* margin: 0 5px 0 5px; */
+                background-position: center;
+                background-size: calc(100% - (-10%));
+                background-repeat: no-repeat;
+                background-position: left;
+                background-image: url(ASSET/IMAGES/onye2.jpg);
+            }
+            .pro-max3{
+                height: 60vh;
+                width: 99%;
+                margin: 0 5px 0 5px;
+                background-position: center;
+                background-size: calc(100% - (-10%));
+                background-position: center;
+                background-repeat: no-repeat;
+                background-image: url(ASSET/IMAGES/onye3.jpg);
+            }
+            .right2{
+                height: 54vh;
+                width: 30%;
+                margin-top: 15px;
+            }
+            .meme{
+                width: 100%;
+                height: 26vh;
+                background-image: url(ASSET/IMAGES/itel.jpg);
+                background-size: cover;
+                background-position: right;
+                margin-bottom: 20px;
+                margin: 5px;
+            }
+            .meme2{
+                width: 100%;
+                height: 26vh;
+                background-image: url(ASSET/IMAGES/azuzu.jpg);
+                background-size: calc(100% - 0%);
+                background-repeat: no-repeat;
+                background-position: center;
+                margin-bottom: 20px;
+                margin: 5px;
+            }
+                    /* HEADER       HEADER     HEADER */
+
+
+            .carousel {
+                position: relative;
+                height: 70vh;
+                border-radius: 15px 0 0 15px;
+                
+            }
+                #slideset1 > *:nth-child(1) {animation-delay: 0s}
+            #slideset1 > *:nth-child(2) {animation-delay: 4s}
+            #slideset1 > *:nth-child(3) {animation-delay: 8s}
+
+            .carousel-inner {
+                position: relative;
+                overflow: hidden;
+                width: 100%;
+                animation: slide 20s infinite;
+                transition: 1s;
+                
+            }
+
+            .carousel-open:checked + .carousel-item {
+                position: static;
+                opacity: 100;
+            }
+
+            .carousel-item {
+                position: absolute;
+            }
+
+            .carousel-item img {
+                display: block;
+                height: 70vh;
+                object-fit: fill;
+                object-position: bottom;
+                width: 1000px;
+                position: relative;
+                
+            }
+            .carousel-item{
+                max-width: 100%;
+                display: block;
+                margin: auto;
+                height: 500px;
+                
+            }
+
+            .carousel-control {
+                background: rgba(0, 0, 0, 0.678);
+                border-radius: 50%;
+                color: #fff;
+                cursor: pointer;
+                display: none;
+                font-size: 40px;
+                height: 40px;
+                line-height: 35px;
+                position: absolute;
+                top: 40%;
+                -webkit-transform: translate(0, -50%);
+                cursor: pointer;
+                -ms-transform: translate(0, -50%);
+                transform: translate(0, -50%);
+                text-align: center;
+                width: 40px;
+                animation: slide 20s infinite;
+                transition: 1s;
+                z-index: 10;
+            }
+
+            .carousel-control.prev {
+                left: 2%;
+            }
+
+            .carousel-control.next {
+                right: 2%;
+            }
+
+            .carousel-control:hover {
+                background: rgba(0, 0, 0, 0.8);
+                color: #aaaaaa;
+            }
+
+            #carousel-1:checked ~ .control-1,
+            #carousel-2:checked ~ .control-2,
+            #carousel-3:checked ~ .control-3 {
+                display: block;
+            }
+
+            .carousel-indicators {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                position: absolute;
+                /* bottom: 20%; */
+                left: 0;
+                right: 0;
+                text-align: center;
+                z-index: 10;
+            }
+
+            .carousel-indicators li {
+                display: inline-block;
+                margin: 0 5px;
+            }
+
+            .carousel-bullet {
+                color: gray;
+                cursor: pointer;
+                display: block;
+                font-size: 35px;
+                /* margin-top: -43px; */
+            }
+
+            .carousel-bullet:hover {
+                color: #aaaaaa;
+            }
+
+            #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+            #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+            #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+                color: #00203fff;
+                
+            }
+
+            #title {
+                width: 100%;
+                position: absolute;
+                padding: 0px;
+                margin: 0px auto;
+                text-align: center;
+                font-size: 27px;
+                color: rgba(255, 255, 255, 1);
+                z-index: 9999;
+                text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+            }
+            @media screen and (max-width: 1200px) {
+                .home{
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                .right2{
+                    display: none;
+                }
+                .center{
+                    width: 100%;
+                }
+                .carousel-item img{
+                   background-position: right;
+                }
+                
+            }
+            .bmw{
+                position: sticky;
+                background-color: #00203fff;
+                border: none;
+                left: 70%;
+                bottom: 18%;
+                height: 80px;
+                width: 300px;
+            }  
+            .w3{
+                position: sticky;
+                left: 100%;
+                bottom: 45%;
+                border: none;
+                width: 150px;
+                background-color: #00203fff;
+                right: 0;
+                height: 50px;
+            } 
+            .bala{
+                color: #5cc8d7ff;
+                text-decoration: none;
+            }
+            .w4{
+                position: sticky;
+                left: 70%;
+                width: 250px;
+                background-color: #00203fff;
+                border: none;
+                bottom: 18%;
+                height: 72px;
+            }
+            .btv{
+                width: 100px;
+                height: 20px;
+                margin-top: 150px;
+                margin-left: 50px;
+                border: none;
+                color: #5cc8d7ff;
+                border-radius: 10px;
+                background-color: #00203fff;
+            }
+            .compute{
+                margin-left: 30px;
+                margin-top: 30px;
+            }
+            label{
+                font-family: poppins;
+            }
+            a, h1, p, del{
+                font-family: poppins;
+            }
+            .balance{
+                text-align: center;
+                background-color: whitesmoke;
+                width: 100%;
+            }
+            .store{
+                width: 230px;
+                margin: 20px;
+                background-color: #fff;
+                border-radius: 5px;
+                text-align: center;
+            }
+            .intro{
+                margin-left: 5px;
+                margin-right: 5px;
+                font-family: poppins;
+                font-size: 14px;
+            }
+            .balance2{
+                width: 80%;
+                margin-top: 20px;
+            }
+            .compute-con{
+                display: flex;
+                flex-wrap: wrap;
+                height: 100%;
+                width: 100%;
+                justify-content: center;
+                background-color: whitesmoke;
+            }
+            .lap4{
+                width: 150px;
+                margin-top: 20px;
+            }
+            .a-z{
+                color: black;
+                text-decoration: none;
+            }
+            .add{
+                width: 180px;
+                height: 30px;
+                border-radius: 15px;
+                background-color: white;
+                border: 1px solid #00203fff;
+                color: #00203fff;
+                margin-bottom: 20px;
+            }
+            .add:hover{
+                background-color: #00203fff;
+                transition: all 0.5s;
+                color: white;
+            }
+            .web{
+                width: 100%;
+                height: 100%;
+                padding-top: 20px;
+                margin-bottom: 50px;
+                padding-bottom: 20px;
+                margin-top: 30px;
+                background-color: whitesmoke;
+            }
+            .lock{
+                width: 80%;
+                height: 50%;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: white;
+                padding-top: 20px;
+                padding-bottom: 10px;
+                margin-top: -50px;
+            }
+            .describe{
+                text-align: center;
+                width: 80%;
+                padding-top: 20px;
+                height: 20%;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: white;
+            }
+            .detail{
+                padding-left: 30px;
+                padding-right: 20px;
+                font-family: poppins;
+                font-size: 13px;
+                opacity: 0.8;
+            }
+            @media screen and (max-width: 500px) {
+                .compute-con{
+                    width: 100%;
+                    height: 100%;
+                }
+                
+            }
+            .asap{
+            width: 100px;
+            margin-top: 40px;
+            }
+            .asap2{
+                width: 50px;
+            }
+            h2{
+                font-size: poppins;
+            }
+            .career{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: center;
+                background-color: rgb(51, 47, 47);
+                width: 100%;
+                height: 100%;
+                padding-bottom: 30px;
+            }
+            .apple{
+                width: 40px;
+                color: #fff;
+            }
+            .apple2{
+                width: 23px;
+            }
+            .log{
+
+                width: 250px;
+                height: 40px;
+                padding-left: 20px;
+                margin-top: -15px;
+                outline: #5cc8d7ff;
+                border-radius: 3px;
+                border: none;
+            }
+            .news{
+                margin-top: -20px;
+                color: #fff;
+                font-family: poppins;
+            }
+            .btnc{
+                text-align: center;
+            }
+            .btn3{
+                width: 100px;
+                height: 45px;
+                border: 2px solid #00203fff;
+                border-radius: 3px;
+                color: #fff;
+                background: none;
+            }
+            .btn3:hover{
+                color: #5cc8d7ff;
+                border: 2px solid #5cc8d7ff;
+            }
+            @media screen and (max-width: 500px) {
+                .zaa{
+                    margin-top: 30px;
+                }
+                .zaa2{
+                    margin-left: 30px;
+                }
+                .log{
+                    width: 80%;
+                    margin-bottom: 10px;
+                }
+                .home{
+                    margin-top: 30px;
+                }
+            }
+
+            .footer{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+            }
+            .footer-carrier{
+                width: 100%;
+                height: 100%;
+                background-color: rgba(37, 35, 35, 0.856);
+                
+            }
+            .pin{
+                margin-left: -40px;
+            }
+            li{
+                list-style: none;
+            }
+            .hyper{
+                color: lightgray;
+                font-size: poppins;
+                text-decoration: none;
+                font-size: 13px;
+            }
+            .hyper:hover{
+                color: #fff;
+                text-decoration: underline;
+            }
+            .about{
+                margin-left: 40px;
+            }
+            .more-info{
+                margin-right: 40px;
+            }
+            @media screen and (max-width: 500px) {
+                .payment{
+                    margin-right: 60px;
+                }
+                .buying{
+                    margin-left: 40px;
+                }
+                .right{
+                    margin-bottom: 70px;
+                }
+                
+            }
+            .h2{
+                color: lightgray;
+            }
+            .connect{
+                text-align: center;
+                padding-bottom: 40px;
+            }
+            .ul-con{
+                display: flex;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .linking{
+                margin: 10px;
+                height: 50px;
+            }
+            .right{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #0c0c0c;
+                width: 100%;
+            }
+            .line-up{
+                width: 35%;
+                height: 2px;
+                background-color: lightgray;
+            }
+            .copy5{
+                color: #fff;
+            }
+            .loo{
+                color: #5cc8d7ff;
+            }
+
+            .header-con4{
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 100%;
+                height: 50px;
+                position: fixed;
+                z-index: 100;
+                margin-top: 20px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin-top: 20px;
+               background-color: #0c0c0c;
+            }
+            .whatsapp-link{
+                    width: 60px;
+                    height: 60px;
+                    background-color: rgb(46, 182, 46);
+                    border: none;
+                    border-radius: 50%;
+                    position: fixed;
+                    z-index: 100;
+                    font-size: 40px;
+                    height: 60px;
+                    width: 60px;
+                    right: 10px;
+                    transition: 0.5s;
+                    bottom: 100px;
+                }
+                .button{
+                    color: #fff;
+                }
+                
+                .whatsapp-link:hover{
+                    transform: scale(1.1);
+                }
+                .button:hover{
+                    transform: scale(1.1);
+                }
+            @media screen and (min-width: 900px) {
+                .header-con4{
+                    display: none;
+                }
+            }
+            @media screen and (max-width: 500px) {
+                .footer-carrier{
+                    display: none;
+                }
+                .col a:hover{
+                    color: red;
+                }
+                .col{
+                    position: absolute;
+                    bottom: 100%;
+                }
+                .logo{
+                    position: relative;
+                }
+                .right{
+                    margin-bottom: 60px;
+                }
+                
+            }
+
+            .repeat{
+        border: none;
+        position: fixed;
+        right: 20px;
+        z-index: 100;
+        bottom: 40px;
+        background: none;
+        animation: bounce 0.5s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+
+    }
+    @keyframes bounce {
+            from {
+                transform: translate3d(0, 0, 0);
+            }
+            to {
+                transform: translate3d(0, 05px, 0);
+            }
+        }
+    html{
+        scroll-behavior: smooth;
+    }
+    </style>
+</head>
+<body>
+    <section class="search">
+        <div class="label-con3">
+            <div class="logo-menu">
+                <img class="logo2" src="ASSET/IMAGES/WhatsApp_Image_2023-05-04_at_06.34.18-removebg-preview.png" alt="">
+            </div>
+            <!-- <div class="chatz">
+                <a class="home-4" href="#">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                </a> -->
+                <a class="home-4" href="cart.html">
+                    <i class="fas fa-shopping-cart">cart</i>
+                </a>
+            </div>
+            </div>
+            <div class="box">
+                <div class="logo-con">
+                    <img class="img25" src="ASSET/IMAGES/WhatsApp_Image_2023-05-04_at_06.34.18-removebg-preview.png" alt="">
+                </div>
+                <form class="form">
+                    <input class="input" type="text" placeholder="Search Product,Brand and Categories">
+                    <button class="gloo" type="search">Submit</button>
+                </form>
+                <!-- <button class="input2">Search</button> -->
+                <div class="container">
+                    <button class="btn2">
+                        <i style="color: #ffff;" class='fas fa-user-alt'></i>
+                        <label style="color: #fff;" for="">Account</label>
+                    </button>
+                    <div class="content">
+                        <a href="account.html">Login/<br>
+                            Sign up</a> 
+                    </div>
+                </div> 
+                <div class="container">
+                    <button class="btn2">
+                        <i style="color: #fff;" class="fa fa-question-circle btm"></i>
+                        <label style="color: #fff;" for="">Help</label>
+                    </button>
+                    <div class="content">
+                        <a href="./help.html">Contact Us</a>
+                        <a href="./about.html">About Us</a>
+                        <a href="./question.html">FAQs</a>              
+                    </div>
+                </div> 
+                <button class="btn2">
+                    <i style="color: white;" class="fas fa-shopping-cart"></i>
+                        <label style="color: #fff;" for="">Cart</label>
+                </button>
+            </div>
+        <header class="header-con">
+            <div class="row">
+                <div class="label-con">
+                    <label class="label">All Categories</label>
+                <i style="color: #fff; margin-top: 5px;" class="fa fa-bars"></i>
+                </div>
+                <div class="col">
+                    <a href="./index.html">Home</a> 
+                    <a href="./computer.html">Computing</a>
+                    <a href="./ph.html">Smartphones</a>
+                    <a href="apple.html">Apple Phones</a>
+                    <a href="./apple.html">Top Official</a>
+                    <a href="./index.html">Best Selling</a>
+                    <a href="./index.html">Other Categories</a>
+                </div>
+            </div>
+
+                     
+            <div>
+                <a class="linker" href="./index.html">
+                    <button class="btc">Home</button>
+                </a>
+                <a class="linker" href="./apple.html">
+                    <button class="btc">Top Official</button>
+                </a>
+            </div>
+            <div>
+                <a class="linker" href="./apple.html">
+                    <button class="btc">Best selling</button>
+                </a>
+            </div>
+            <div>
+                <a class="linker" href="./ph.html">
+                    <button class="btc">smartphones</button>
+                </a>
+            </div>
+    
+            <div>
+                <a class="linker" href="./index.html">
+                    <button class="btc">Other Categories</button>
+                </a>
+            </div>
+          
+        
+        </header>
+    </section>
+
+
+    <div class="home">
+        <div class="center">
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+                    <div class="carousel-item">
+
+                        <div class="pro-max2"></div>
+                     <!-- <img src="apple-phone.webp" alt="">
+                     <button class="w4">
+                        <a class="bala" href="#">SHOP NOW >></a>
+                       </button> -->
+                    </div>
+                    <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+                    <div class="carousel-item">
+                        <div class="pro-max"></div>
+                       <!-- <img src="infinix.jpg" alt="">
+                       <button class="w3">
+                        <a class="bala" href="#">SHOP NOW >></a>
+                       </button> -->
+                    </div>
+                    <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+                    <div class="carousel-item">
+                        <div class="pro-max3"></div>
+                        <!-- <img class="line" style="object-position: right;" src="explo.webp" alt="">
+                        <button class="bmw">
+                            <a class="bala" href="#">SHOP NOW >></a>
+                        </button> -->
+                    </div>
+                    <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+                    <label for="carousel-2" class="carousel-control next control-1">›</label>
+                    <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+                    <label for="carousel-3" class="carousel-control next control-2">›</label>
+                    <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+                    <label for="carousel-1" class="carousel-control next control-3">›</label>
+                    <ol class="carousel-indicators">
+                        <li>
+                            <label for="carousel-1" class="carousel-bullet">•</label>
+                        </li>
+                        <li>
+                            <label for="carousel-2" class="carousel-bullet">•</label>
+                        </li>
+                        <li>
+                            <label for="carousel-3" class="carousel-bullet">•</label>
+                        </li>
+                    </ol>
+                  </div>
+              </div>
+        </div>
+        <div class="right2">
+            <div class="meme">
+                <!-- <button class="btv">shop Now</button> -->
+            </div>
+            <div class="meme2">
+                <!-- <button class="btv">shop Now</button> -->
+            </div>
+        </div>
+    </div> 
+    <div class="compute">
+       <!-- <a class="loo" href="index.html">Home>></a> -->
+       <label for="">Computers and Accessories</label>
+       <h1>Computers And Accessories</h1>
+    </div>
+    <div class="balance">
+        <img class="balance2" src="ASSET/IMAGES/Computingoct.jpg" alt="">
+    </div>
+    <div class="compute-con">
+       <div class="store">
+        <a class="a-z" href="#">
+            <img class="lap4" src="ASSET/IMAGES/lap4.webp" alt="">
+        <p class="intro">Hp 15 Intel Core I3, 2.4Ghz, 1TB HDD, 4GB RAM - Black</p>
+        <label for="">₦165,570</label>
+        <del>
+            ₦413,925
+        </del><br>
+        <label for="">You save ₦248,355</label>
+        </a><br>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <label for="">reviews</label><br>
+        <button class="add">Add To Cart</button>
+       </div>
+
+       <div class="store">
+        <a class="a-z"  href="page.html">
+            <img class="lap4" src="ASSET/IMAGES/oct2.webp" alt="">
+        <p class="intro">HP Probook 440 G8 - 11th Gen -core I5 -8GB</p>
+        <label for="">₦545,900</label>
+        <del>
+            ₦613,925
+        </del><br>
+        <label for="">You save ₦248,355</label>
+        </a><br>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <label for="">reviews</label><br>
+        <button class="add">Add To Cart</button>
+       </div>
+
+       <div class="store">
+        <a class="a-z"  href="">
+            <img class="lap4" src="ASSET/IMAGES/hp7.jpg" alt="">
+            <p class="intro">
+                DELL Latitude 3420-14" Intel Core RAM-256GB SSD-Black<br><br>
+            <label for="">₦165,570</label>
+            <del>
+                ₦413,925
+            </del><br>
+            <label for="">You save ₦248,355</label>
+        </a><br>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <label for="">reviews</label><br>
+        <button class="add">Add To Cart</button>
+       </div>
+       <div class="store">
+        <a class="a-z"  href="">
+            <img class="lap4" src="ASSET/IMAGES/intel.webp" alt="">
+            <p class="intro">
+                Dell Inspiron 14 - 14.1" - Intel - 256GB SSD 8GB RAM
+            </p>
+            <label for="">₦514,000</label>
+            <del>
+                ₦613,925
+            </del><br>
+            <label for="">You save ₦248,355</label>
+        </a><br>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <label for="">reviews</label><br>
+        <button class="add">Add To Cart</button>
+       </div>
+
+       <div class="store">
+        <a class="a-z"  href="">
+            <img class="lap4" src="ASSET/IMAGES/desttop.webp" alt="">
+            <p class="intro">
+                HP 200 G4 AIO, Core I5-10210U, 8GB RAM
+            </p>
+            <label for="">₦452,320</label>
+            <del>
+                ₦1,130,800
+            </del><br>
+            <label for="">You save ₦678,480</label><br>
+        </a><br>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <label for="">reviews</label><br>
+        <button class="add">Add To Cart</button>
+       </div>
+
+       <div class="store">
+        <a class="a-z"  href="">
+            <img style="margin-top: 40px;" class="lap4" src="ASSET/IMAGES/mtn.webp" alt="">
+            <p class="intro">MTN 5g Broadband Router- White + Free 100gb Data Bonus + Charger</p>
+            <label for="">₦49,999</label>
+            <del>
+                ₦613,925
+            </del><br>
+            <label for="">You save ₦248,355</label><br>
+        </a><br>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <label for="">reviews</label><br>
+        <button class="add">Add To Cart</button>
+       </div>
+
+       <div class="store">
+        <a class="a-z"  href="">
+            <img class="lap4" src="ASSET/IMAGES/copy.webp" alt="">
+            <p class="intro">HP Envy 15 X360 11th Gen - Intel Core I7 - 16GB RAM </p>
+            <label for="">₦882,500</label>
+            <del>
+                ₦1,013,925
+            </del><br>
+            <label for="">You save ₦131,425</label><br>
+        </a><br>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <label for="">reviews</label><br>
+        <button class="add">Add To Cart</button>
+       </div>
+
+       <div class="store">
+        <a class="a-z"  href="">
+            <img class="lap4" src="ASSET/IMAGES/dell.webp" alt="">
+            <p class="intro">
+                Dell Latitude 5420 14 11th Gen Intel Core
+            </p>
+            <label for="">₦628,000</label>
+            <del>
+                ₦658,000
+            </del><br>
+            <label for="">You save ₦30,000</label><br>
+        </a><br>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <label for="">reviews</label><br>
+        <button class="add">Add To Cart</button>
+       </div>
+
+       <div class="store">
+        <a class="a-z"  href="">
+            <img class="lap4" src="ASSET/IMAGES/mac.webp" alt="">
+            <p class="intro">
+                Apple MacBook Pro 2021 With M1 Max - 16"
+            </p>
+            <label for="">₦3,050,000</label>
+            <del>
+                ₦3,150,000
+            </del><br>
+            <label for="">You save ₦100,000</label><br>
+        </a><br>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <label for="">reviews</label><br>
+        <button class="add">Add To Cart</button>
+       </div>
+
+       <div class="store">
+        <a class="a-z"  href="">
+            <img class="lap4" style="margin-top: 50px;" src="ASSET/IMAGES/hp8.jpg" alt="">
+            <p class="intro">
+                Laptop Samsung - Galaxy  Alpha 
+            </p>
+            <label for="">₦380,000</label>
+            <del> 
+                ₦420,000
+            </del><br>
+            <label for="">You save ₦7,500</label><br>
+        </a><br>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <label for="">reviews</label><br>
+        <button class="add">Add To Cart</button>
+       </div>
+
+       <div class="store">
+        <a class="a-z"  href="">
+            <img class="lap4" src="ASSET/IMAGES/hp9.jpg" alt="">
+            <p class="intro">
+                Green Ultra-slim Case 2.0mm For Macbook Pro 14"
+            </p>
+            <label for="">₦512,000</label>
+            <del>
+                ₦600,000
+            </del><br>
+            <label for="">You save ₦88,000</label><br>
+        </a><br>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <label for="">reviews</label><br>
+        <button class="add">Add To Cart</button>
+       </div>
+       
+       <div class="store">
+        <a class="a-z"  href="">
+            <img class="lap4" src="ASSET/IMAGES/hp10.jpg" alt="">
+            <p class="intro">
+                DELL Pavilion 14 - Intel Core RAM-Windows 11+USB 
+            </p>
+            <label for="">₦925,000</label>
+            <del>
+                ₦100,000,000
+            </del><br>
+            <label for="">You save ₦3,501</label><br>
+        </a><br>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+        <label for="">reviews</label><br>
+        <button class="add">Add To Cart</button>
+       </div>
+    </div>
+
+    <div class="bottom-carrier">
+    <div class="web">
+        <div class="describe">
+            <h1>Computer Accessories</h1>
+            <h1>Buy Computers & Accessories Online</h1>
+        </div>
+        <div class="lock">
+            <p class="detail">
+                When choosing a computing device, whether a desktop computer or a laptop, there are several factors to take into account. Basically, it depends on your needs for the device because three key factors are involved: the screen for a huge display, the RAM size for the best speed, and the memory for the space to store any active documents and projects. When working from a fixed location, a desktop computer is the best option because it has a larger screen than a laptop and a powerful CPU to ensure smooth operation. A desktop's RAM and memory can typically be easily updated, so by the time the present memory space is used up, you may get it upgraded and keep working without interruption. Hp, DELL, Toshiba, and more computer manufacturers make desktop computers. An all-in-one printer with a photocopier, printer, and scanner is another piece of equipment that would facilitate operations. The days of having the three machines configured differently are over since Konga knows what is best for you and doesn't want you to experience any stress at all. For this reason, we always encourage you to shop online with us. 
+            </p>
+        </div>
+    </div>
+    <div class="career">
+        <div class="zaa">
+            <img class="asap"  src="ASSET/IMAGES/WhatsApp_Image_2023-05-04_at_06.08.37-removebg-preview.png" alt="">
+        </div>
+        <div class="zaa2">
+            <h2 style="color: #fff;">NEW TO AUSMOBILE?</h2>
+            <p class="news">
+                Subscribe to our newsletter to get updates on our latest offers!
+            </p>
+            <div>
+                <input class="log" type="text" placeholder="Enter Your Email">
+                <button class="btn3">Male</button>
+                <button class="btn3">Female</button>
+            </div>
+        </div>
+        <div class="download">
+            <label style="color: #fff;" for="">DOWNLOAD AUSMOBILE FREE APP</label><br>
+            <label style="color: #fff;" for="">Get access to exclusive offers!</label><br>
+            <button class="btcn">
+                <img class="apple" src="ASSET/IMAGES/Apple-Logo.png" alt="">
+                Download on the<br>
+                <span>Apple Store</span>
+            </button>
+            <button class="btcn">
+                <img class="apple2" src="ASSET/IMAGES/play.png" alt="">
+                Download on the<br>
+                <span style="margin-left: 20px;">Apple Store</span>
+            </button>
+        </div>
+    </div>
+    <div class="footer-carrier">
+    <div class="footer">
+        <div class="about">
+            <h2 class="h2">ABOUT ASAP</h2>
+            <ul class="pin">
+                <li>
+                    <a class="hyper" href="about.html">About US</a>
+                </li>
+                <li>
+                    <a  class="hyper" href="contact.html">Contact Us</a>
+                </li>
+                <li>
+                    <a class="hyper" href="term.html">Terms & Conditions</a>
+                </li>
+            </ul>
+        </div>
+        <div class="payment">
+            <h2 class="h2">QUICKLINKS</h2>
+            <ul class="pin">
+                <li>
+                    <a class="hyper" href="./apple.html">Top Official</a>
+                </li>
+                <li>
+                    <a class="hyper" href="./ph.html">Smartphones</a>
+                </li>
+                <li>
+                    <a class="hyper" href="./index.html">Others</a>
+                </li>
+            </ul>
+        </div>
+        <div class="buying">
+            <h2 class="h2">BUYING ON AUSMOBILE</h2>
+            <ul class="pin">
+                <li>
+                    <a class="hyper" href="#">Buyer Safty Center</a>
+                </li>
+                <li>
+                    <a class="hyper" href="fqa.html">FAQs</a>
+                </li>
+                <li>
+                    <a class="hyper" class="hyper" href="delivery.html">Delivery</a>
+                </li>
+            </ul>
+        </div>
+        <div class="more-info">
+            <h2 class="h2">MORE INFO</h2>
+            <ul class="pin">
+                <li>
+                    <a class="hyper" href="./track.html">Track Order</a>
+                </li>
+                <li>
+                    <a class="hyper" href="order.html">Order</a>
+                </li>
+                <li>
+                    <a class="hyper" href="./privacy.html">Privacy Policy</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="connect">
+        <h2 class="h2">CONNECT WITH US</h2>
+                <a class="linking" href="https://www.facebook.com">
+                    <i style="color: #fff; font-size: 20px;" class='fab fa-facebook-f'></i>
+                </a>
+                <a class="linking" href="https://www.google.com/gmail">
+                    <i style="color: #fff; font-size: 20px;" class="fa fa-envelope" aria-hidden="true"></i>
+                </a>
+                <a class="linking"  href="https://www.instagram.com">
+                    <i style="color: #fff; font-size: 20px;" class='fa fa-instagram'></i>
+                </a>
+    </div>
+</div>
+<div class="right">
+    <div class="line-up"></div>
+    <div>
+        <p class="copy5">&#169; 2023 Ausmobilestore.All rights reserved</p>
+    </div>
+    <div class="line-up"></div>
+</div>
+</div>
+
+   <header class="header-con4">
+            <div class="row">
+                <div class="label-con">
+                    <label class="label"></label>
+                <!-- <img class="logo" src="ham123-removebg-preview.png" alt=""> -->
+                <i style="color: #fff; margin-top: 5px;" class="fa fa-bars"></i>
+                </div>
+                <div class="col">
+                    <a href="./index.html">Home</a> 
+                    <a href="./computer.html">Computing</a>
+                    <a href="./ph.html">Smartphones</a>
+                    <a href="apple.html">Apple Phones</a>
+                    <a href="./apple.html">Top Official</a>
+                    <a href="./index.html">Best Selling</a>
+                    <a href="./index.html">Other Categories</a>
+                </div>
+            </div>
+            <div>
+                <a class="linker" href="contact.html">Contact US</a>
+            </div>
+            <div>
+                <a class="linker" href="#">Payment</a>
+            </div>
+            <div>
+                <a class="linker" href="cart.html">
+                    <i class="fas fa-shopping-cart">cart</i>
+                </a>
+            </div>
+            <div>
+                <a class="linker" href="index.html">
+                        <a href="index.html">
+                            <i style="font-size: 30px; margin-right: 30px; color: #fff;" class="fa fa-home" aria-hidden="true"></i>
+                        </a>
+                </a>
+            </div>
+           
+       
+        </header>
+ <button class="whatsapp-link"> 
+                <a href="https://api.whatsapp.com/send?phone=
+                +2347059051442&text=Hello We are here to help u!!">
+                <i class="fa fa-whatsapp button"></i>
+                </a>
+            </button>
+
+            <button class="repeat" id="repeat">
+                <a href="#">
+                    <i class='fas fa-angle-double-up' style='font-size:38px;color:rgba(26, 115, 150, 0.89)'></i>
+                </a>
+            </button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <script>
+
+                    let mybutton = document.getElementById("repeat");
+
+                    // When the user scrolls down 20px from the top of the document, show the button
+                    window.onscroll = function() {scrollFunction()};
+
+                    function scrollFunction() {
+                    if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+                        mybutton.style.display = "block";
+                    } else {
+                        mybutton.style.display = "none";
+                    }
+                    }
+
+
+            </script>
+    
+</body>
+</html>
